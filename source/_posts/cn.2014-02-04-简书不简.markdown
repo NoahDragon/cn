@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "简书不简"
-date: 2014-02-04 13:24:00 -0400
+title: 简书不简
+date: '2014-02-04 13:24:00 -0400'
 comments: true
-categories: [Review]
-keywords: Jianshu, Review
-description: "Blog in a markdown way on Jianshu."
+categories:
+  - Review
+keywords: 'Jianshu, Review'
+description: Blog in a markdown way on Jianshu.
+abbrlink: 4b0eefbd
 ---
 ![](http://www.qinglv5.net/uploads/allimg/120801/1_120801131226_8.jpg)
 

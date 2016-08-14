@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Frozen Heart Cracked Plot"
-date: 2015-10-10 20:15:00 -0400
+title: Frozen Heart Cracked Plot
+date: '2015-10-10 20:15:00 -0400'
 comments: true
-categories: [Movie Review]
-keywords: Frozen, Movie review
-description: "Movie review on Fronzen."
+categories:
+  - Movie Review
+keywords: 'Frozen, Movie review'
+description: Movie review on Fronzen.
+abbrlink: 64cccd95
 ---
 ![](http://images6.fanpop.com/image/photos/36000000/Frozen-image-frozen-36065977-2560-1600.jpg)
 

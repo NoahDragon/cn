@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "《送你一颗子弹》读后感"
-date: 2012-10-17 20:15:00 -0400
+title: 《送你一颗子弹》读后感
+date: '2012-10-17 20:15:00 -0400'
 comments: true
+abbrlink: bd1a54e6
 ---
 **关于作者**
 

@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "忘记-忘记的"
-date: 2006-08-07 20:15:00 -0400
+title: 忘记-忘记的
+date: '2006-08-07 20:15:00 -0400'
 comments: true
-categories: [Feeling]
+categories:
+  - Feeling
 keywords: Feeling
-description: "忘记-忘记的"
+description: 忘记-忘记的
+abbrlink: 35ef3944
 ---
 
 自认为记忆不好，忘事是常有的事，而且儿时的记忆也忘记大半。

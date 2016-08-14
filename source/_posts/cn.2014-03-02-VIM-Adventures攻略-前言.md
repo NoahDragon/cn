@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "《VIM-Adventures攻略》前言"
-date: 2014-03-02 20:15:00 -0400
+title: 《VIM-Adventures攻略》前言
+date: '2014-03-02 20:15:00 -0400'
 comments: true
+abbrlink: bfdaadb0
 ---
 自从有了计算机，人们就想向其灌输自己的想法。
 

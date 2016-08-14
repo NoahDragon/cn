@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "娘伪中眼"
-date: 2009-11-25 20:15:00 -0400
+title: 娘伪中眼
+date: '2009-11-25 20:15:00 -0400'
 comments: true
+abbrlink: 969499a5
 ---
 标题倒过来读。
 

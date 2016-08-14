@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "《The Last of Us》点点滴滴"
-date: 2013-07-15 20:15:00 -0400
+title: 《The Last of Us》点点滴滴
+date: '2013-07-15 20:15:00 -0400'
 comments: true
+abbrlink: b1652f16
 ---
 距离《The Last of Us》上市已经有一个月了，想必该通关的玩家也都通了，所以在此就可以厚颜无耻的放心剧透了。
 注：

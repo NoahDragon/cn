@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "智力运动发展之己见"
-date: 2011-03-25 20:15:00 -0400
+title: 智力运动发展之己见
+date: '2011-03-25 20:15:00 -0400'
 comments: true
+abbrlink: 9685a9d7
 ---
 何谓智力运动？
 

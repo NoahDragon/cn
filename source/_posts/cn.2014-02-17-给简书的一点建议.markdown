@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "给简书的一点建议"
-date: 2014-02-17 12:46:00 -0400
+title: 给简书的一点建议
+date: '2014-02-17 12:46:00 -0400'
 comments: true
-categories: [Review]
-keywords: Jianshu, Review, Suggestion
-description: "Suggestion on Jianshu website."
+categories:
+  - Review
+keywords: 'Jianshu, Review, Suggestion'
+description: Suggestion on Jianshu website.
+abbrlink: c4e320f3
 ---
 ![](http://i1.sinaimg.cn/dy/c/sd/2011-02-28/U2494P1T1D22028511F21DT20110228172620.jpg)
 

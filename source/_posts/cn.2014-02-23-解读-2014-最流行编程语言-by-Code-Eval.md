@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "解读 《2014 最流行编程语言》 by Code Eval"
-date: 2014-02-23 20:15:00 -0400
+title: 解读 《2014 最流行编程语言》 by Code Eval
+date: '2014-02-23 20:15:00 -0400'
 comments: true
+abbrlink: 1f8b54b4
 ---
 ![](http://images.cnitblog.com/blog/605265/201402/230529284143047.jpg)
 

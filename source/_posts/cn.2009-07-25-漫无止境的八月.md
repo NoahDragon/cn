@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "我的日记"
-date: 2009-07-25 20:15:00 -0400
+title: 我的日记
+date: '2009-07-25 20:15:00 -0400'
 comments: true
+abbrlink: 26e294cb
 ---
 八月，暑假。
 

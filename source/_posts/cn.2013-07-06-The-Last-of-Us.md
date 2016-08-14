@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "The Last of Us"
-date: 2013-07-06 20:15:00 -0400
+title: The Last of Us
+date: '2013-07-06 20:15:00 -0400'
 comments: true
+abbrlink: 4ce9323d
 ---
 顺便唠叨下《The Last of Us》，中文翻译是《美国末日》，其实感觉不妥。因为美国United States，这正式场合的缩写都是是U.S.，而《The Last of Us》中的‘us’没有这个缩写标点，所以应该就是我们的意思。如果非要说一语双关也无不可，毕竟故事背景发生在美国。而且是在IGN上得分10/10的神作。
 

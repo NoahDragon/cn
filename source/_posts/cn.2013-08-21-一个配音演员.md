@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "一个配音演员"
-date: 2013-08-21 20:15:00 -0400
+title: 一个配音演员
+date: '2013-08-21 20:15:00 -0400'
 comments: true
+abbrlink: 784a6da
 ---
 Troy Baker
 我最敬佩的配音演员，且不说他将《The Last of Us》中的Joel配活了，就这帅气的外表，就能让人怦然心动，更别提他的人格魅力了。

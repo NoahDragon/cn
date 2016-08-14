@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "一些关于搭建网页的信息"
-date: 2015-05-12 22:52:00 -0400
+title: 一些关于搭建网页的信息
+date: '2015-05-12 22:52:00 -0400'
 comments: true
-categories: [Website]
-keywords: build website, github, digital ocean, namecheap, godaddy, jekyll, octopress, disqus, google site, wordprss
-description: "Some info for build website."
+categories:
+  - Website
+keywords: >-
+  build website, github, digital ocean, namecheap, godaddy, jekyll, octopress,
+  disqus, google site, wordprss
+description: Some info for build website.
+abbrlink: 197c2f57
 ---
 此文章写于2014-Aug-01.
 

@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "我看的那些片"
-date: 2008-11-11 20:15:00 -0400
+title: 我看的那些片
+date: '2008-11-11 20:15:00 -0400'
 comments: true
-categories: [Movie Review]
+categories:
+  - Movie Review
 keywords: Movie review
-description: "我看的那些片"
+description: 我看的那些片
+abbrlink: e686b3c9
 ---
 ![](https://upload.wikimedia.org/wikipedia/en/9/98/Wanted_film_poster.jpg)
 

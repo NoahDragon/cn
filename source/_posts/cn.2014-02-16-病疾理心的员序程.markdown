@@ -1,11 +1,14 @@
 ---
 layout: post
-title: "病疾理心的员序程"
-date: 2014-02-16 23:26:00 -0400
+title: 病疾理心的员序程
+date: '2014-02-16 23:26:00 -0400'
 comments: true
-categories: [Programmer, Review]
-keywords: Wang Yin, Programmer, Review
-description: "A review on Wang Yin's blog."
+categories:
+  - Programmer
+  - Review
+keywords: 'Wang Yin, Programmer, Review'
+description: A review on Wang Yin's blog.
+abbrlink: 9b288bea
 ---
 ![](http://xradeon.com/wp-content/uploads/2013/11/programmer1.png)
 
