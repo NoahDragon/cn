@@ -98,3 +98,13 @@ image_minifier:
   optimizationlevel: 2
   pngquant: false
   progressive: false
+
+# Markdown settings
+marked:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
