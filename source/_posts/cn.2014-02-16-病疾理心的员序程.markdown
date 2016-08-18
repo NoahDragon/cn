@@ -10,7 +10,6 @@ keywords: 'Wang Yin, Programmer, Review'
 description: A review on Wang Yin's blog.
 abbrlink: 9b288bea
 ---
-![](http://xradeon.com/wp-content/uploads/2013/11/programmer1.png)
 
 题目请倒过来读。
 
