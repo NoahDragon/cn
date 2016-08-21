@@ -4,6 +4,7 @@ title: 漫无止境的八月
 date: '2009-07-25 20:15:00 -0400'
 comments: true
 abbrlink: 26e294cb
+showAd: true
 ---
 八月，暑假。
 

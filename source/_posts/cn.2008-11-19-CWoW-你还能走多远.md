@@ -4,6 +4,7 @@ title: CWoW-你还能走多远
 date: '2008-11-19 20:15:00 -0400'
 comments: true
 abbrlink: aebaa9c9
+showAd: true
 ---
 今天看到了一个玩家发的一则笑话：
 

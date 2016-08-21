@@ -8,6 +8,7 @@ categories:
 keywords: '2014, CodeEval, Programming Language, Popular, Review'
 description: How should we view the popular programming language.
 abbrlink: fa87ae80
+showAd: true
 ---
 ![](http://images.cnitblog.com/blog/605265/201402/230529284143047.jpg)
 

@@ -8,6 +8,7 @@ categories:
 keywords: 'Jianshu, Review, Suggestion'
 description: Suggestion on Jianshu website.
 abbrlink: c4e320f3
+showAd: true
 ---
 ![](http://i1.sinaimg.cn/dy/c/sd/2011-02-28/U2494P1T1D22028511F21DT20110228172620.jpg)
 

@@ -9,6 +9,7 @@ categories:
 keywords: 'Wang Yin, Programmer, Review'
 description: A review on Wang Yin's blog.
 abbrlink: 9b288bea
+showAd: true
 ---
 
 题目请倒过来读。

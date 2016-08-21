@@ -4,6 +4,7 @@ title: 琼蕊耹
 date: '2010-04-11 20:15:00 -0400'
 comments: true
 abbrlink: 3fd11c02
+showAd: true
 ---
 **本日志完全基于梦境，如有雷同纯属虚构！**
 起先是一片黑暗，什么都看不见。

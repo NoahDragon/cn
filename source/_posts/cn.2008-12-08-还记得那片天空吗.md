@@ -4,6 +4,7 @@ title: 还记得那片天空吗？
 date: '2008-12-08 20:15:00 -0400'
 comments: true
 abbrlink: 6db0bebf
+showAd: true
 ---
 抬头仰望天空，看到的不仅仅是蓝天和云彩，还有灵魂——自己的和别人的。
 

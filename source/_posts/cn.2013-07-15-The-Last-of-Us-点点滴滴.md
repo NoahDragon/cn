@@ -4,6 +4,7 @@ title: 《The Last of Us》点点滴滴
 date: '2013-07-15 20:15:00 -0400'
 comments: true
 abbrlink: b1652f16
+showAd: true
 ---
 ![](/img/TLOU.jpeg)
 

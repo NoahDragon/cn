@@ -4,6 +4,7 @@ title: 梦境，是哆啦A梦的时空穿梭机？
 date: '2011-04-01 20:15:00 -0400'
 comments: true
 abbrlink: 78bf31c0
+showAd: true
 ---
 做了很奇怪的一个梦。
 

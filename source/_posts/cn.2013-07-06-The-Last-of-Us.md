@@ -4,6 +4,7 @@ title: The Last of Us
 date: '2013-07-06 20:15:00 -0400'
 comments: true
 abbrlink: 4ce9323d
+showAd: true
 ---
 ![](/img/TLOU_Fight.jpeg)
 

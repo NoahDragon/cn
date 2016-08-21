@@ -8,6 +8,7 @@ categories:
 keywords: Movie review
 description: 我看的那些片
 abbrlink: e686b3c9
+showAd: true
 ---
 ![](https://upload.wikimedia.org/wikipedia/en/9/98/Wanted_film_poster.jpg)
 

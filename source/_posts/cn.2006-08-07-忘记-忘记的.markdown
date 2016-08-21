@@ -8,6 +8,7 @@ categories:
 keywords: Feeling
 description: 忘记-忘记的
 abbrlink: 35ef3944
+showAd: true
 ---
 
 自认为记忆不好，忘事是常有的事，而且儿时的记忆也忘记大半。

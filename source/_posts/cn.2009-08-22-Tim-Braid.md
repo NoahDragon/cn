@@ -4,6 +4,7 @@ title: Tim Braid
 date: '2009-08-22 20:15:00 -0400'
 comments: true
 abbrlink: bf2e20d1
+showAd: true
 ---
 《Braid》是一款画风优美的2D卷轴动作解谜游戏。简单来说就是一款平面益智游戏。再简单来说就是休闲小游戏。虽然它小，也就100M左右，但它所描述的世界观却是宏伟深邃。
 

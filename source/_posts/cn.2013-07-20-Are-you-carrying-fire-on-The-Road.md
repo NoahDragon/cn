@@ -4,6 +4,7 @@ title: Are you carrying fire on 《The Road》
 date: '2013-07-20 20:15:00 -0400'
 comments: true
 abbrlink: 415d8ce0
+showAd: true
 ---
 在玩过《TLoU》后，突然对末日灾难人类的生存产生了好奇。在浏览《TLoU》的评论时，看到有人提到这部电影《The Road》（中文《末日危途》），于是就看了下。同样是一个大人一个小孩，同样是亲人（般）间的羁绊，同样是灾变之后，同样心存希望。
 

@@ -8,6 +8,7 @@ categories:
 keywords: 'Jianshu, Review'
 description: Blog in a markdown way on Jianshu.
 abbrlink: 4b0eefbd
+showAd: true
 ---
 ![](http://www.qinglv5.net/uploads/allimg/120801/1_120801131226_8.jpg)
 

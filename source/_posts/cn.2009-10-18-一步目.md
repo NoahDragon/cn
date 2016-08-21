@@ -4,6 +4,7 @@ title: 一步目
 date: '2009-10-18 20:15:00 -0400'
 comments: true
 abbrlink: 31bfb23d
+showAd: true
 ---
 一步之遥，有多远？
 一目之距，又有多广？

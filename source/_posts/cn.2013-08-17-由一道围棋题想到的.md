@@ -4,6 +4,7 @@ title: 由一道围棋题想到的
 date: '2013-08-17 20:15:00 -0400'
 comments: true
 abbrlink: a52b6539
+showAd: true
 ---
 黑先，黑1和白2交换后黑棋如何整形？
 

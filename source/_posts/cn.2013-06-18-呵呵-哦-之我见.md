@@ -4,6 +4,7 @@ title: “呵呵”“哦”之我见
 date: '2013-06-18 20:15:00 -0400'
 comments: true
 abbrlink: 105c643c
+showAd: true
 ---
 先插入两段解释：
 呵呵：

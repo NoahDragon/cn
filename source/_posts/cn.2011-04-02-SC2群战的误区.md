@@ -4,6 +4,7 @@ title: SC2群战的误区
 date: '2011-04-02 20:15:00 -0400'
 comments: true
 abbrlink: ec871717
+showAd: true
 ---
 Warning：本文只适合低端玩家，高端请绕行。
 

@@ -5,6 +5,18 @@
 <% } else { %>
 <h2 class="title"><%= post.title%></h2>
 <%- post.content %>
+<% if (post.showAd) { %>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Auto Size -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7111732968167538"
+     data-ad-slot="5336462405"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<% } %> 
 <% if (post.comments){ %>
 <!-- 多说评论框 start -->
      <div class="ds-thread" data-thread-key="<%= post.abbrlink%>" data-title="<%= post.title%>" data-url="<%- post.permalink%>"></div>

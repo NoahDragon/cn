@@ -4,6 +4,7 @@ title: 我的日记
 date: '2009-02-22 20:15:00 -0400'
 comments: true
 abbrlink: 26e294cb
+showAd: true
 ---
 记得从小学老师就教育我们，记日记，天天记。然而记什么呢？流水帐，还是一句感言？
 

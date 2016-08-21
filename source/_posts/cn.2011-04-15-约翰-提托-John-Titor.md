@@ -4,6 +4,7 @@ title: 约翰·提托（John Titor）
 date: '2011-04-15 20:15:00 -0400'
 comments: true
 abbrlink: 86ec242d
+showAd: true
 ---
 不得不说今天的四月新番还是有不少可看的片子，比如《命运石之门》。John Titor这个人名也是从那里面听说的。今天先不讨论四月新番，主要看看John Titor这个人。
 

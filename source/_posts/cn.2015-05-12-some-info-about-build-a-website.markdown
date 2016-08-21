@@ -10,6 +10,7 @@ keywords: >-
   disqus, google site, wordprss
 description: Some info for build website.
 abbrlink: 197c2f57
+showAd: true
 ---
 此文章写于2014-Aug-01.
 

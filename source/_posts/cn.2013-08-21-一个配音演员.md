@@ -4,6 +4,7 @@ title: 一个配音演员
 date: '2013-08-21 20:15:00 -0400'
 comments: true
 abbrlink: 784a6da
+showAd: true
 ---
 
 ![](\img\Troy_Baker.jpeg)

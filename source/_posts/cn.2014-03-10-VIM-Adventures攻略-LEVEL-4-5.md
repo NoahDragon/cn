@@ -4,6 +4,7 @@ title: 《VIM-Adventures攻略》 LEVEL 4、5
 date: '2014-03-10 20:15:00 -0400'
 comments: true
 abbrlink: 46d23509
+showAd: true
 ---
 上一篇文章忘记说明文本编辑器的模式：
 

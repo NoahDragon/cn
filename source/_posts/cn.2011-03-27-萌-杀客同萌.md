@@ -4,6 +4,7 @@ title: 萌！《杀客同萌》！
 date: '2011-03-27 20:15:00 -0400'
 comments: true
 abbrlink: 481ce935
+showAd: true
 ---
 刚看完这部影片，迫不及待的想跟大家分享。
 

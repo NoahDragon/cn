@@ -8,6 +8,7 @@ categories:
 keywords: 'Frozen, Movie review'
 description: Movie review on Fronzen.
 abbrlink: 64cccd95
+showAd: true
 ---
 ![](http://images6.fanpop.com/image/photos/36000000/Frozen-image-frozen-36065977-2560-1600.jpg)
 

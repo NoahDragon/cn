@@ -4,6 +4,7 @@ title: Z!《World War Z》
 date: '2013-07-10 20:15:00 -0400'
 comments: true
 abbrlink: bc368244
+showAd: true
 ---
 内容含有丰富剧透，若无看过剧情，请绕道。
 
