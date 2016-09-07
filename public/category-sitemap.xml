@@ -1,69 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://cn.abnerchou.me</loc>
+        <loc>https://cn.abnerchou.me</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
     <url>
-        <loc>http://cn.abnerchou.me/categories/Feeling/</loc>
+        <loc>https://cn.abnerchou.me/categories/Feeling/</loc>
         <lastmod>2016-08-21T01:45:19.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://cn.abnerchou.me/categories/Movie-Review/</loc>
+        <loc>https://cn.abnerchou.me/categories/Movie-Review/</loc>
         <lastmod>2016-08-21T01:45:19.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://cn.abnerchou.me/categories/Review/</loc>
+        <loc>https://cn.abnerchou.me/categories/Review/</loc>
         <lastmod>2016-08-21T01:45:19.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://cn.abnerchou.me/categories/Programmer/</loc>
+        <loc>https://cn.abnerchou.me/categories/Programmer/</loc>
         <lastmod>2016-08-21T01:45:19.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://cn.abnerchou.me/categories/Programming-Language/</loc>
+        <loc>https://cn.abnerchou.me/categories/App/</loc>
         <lastmod>2016-08-21T01:45:19.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://cn.abnerchou.me/categories/App/</loc>
+        <loc>https://cn.abnerchou.me/categories/Programming-Language/</loc>
         <lastmod>2016-08-21T01:45:19.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://cn.abnerchou.me/categories/Programmer/Review/</loc>
+        <loc>https://cn.abnerchou.me/categories/Programmer/Review/</loc>
         <lastmod>2016-08-21T01:45:19.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://cn.abnerchou.me/categories/Website/</loc>
+        <loc>https://cn.abnerchou.me/categories/App/Andriod/</loc>
         <lastmod>2016-08-21T01:45:19.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://cn.abnerchou.me/categories/App/Andriod/</loc>
+        <loc>https://cn.abnerchou.me/categories/Website/</loc>
         <lastmod>2016-08-21T01:45:19.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
