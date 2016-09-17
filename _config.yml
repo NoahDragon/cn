@@ -98,7 +98,7 @@ js_minifier:
   exclude:
     - '*.min.js'
 image_minifier:
-  enable: true
+  enable: false
   interlanced: false
   optimizationlevel: 2
   pngquant: false
