@@ -16,7 +16,7 @@ highlight_theme: normal
 menu:
   Blog: /
   #categories: /categories
-  #archives: /archives
+  #Archives: /archives
   #tags: /tags
   GitHub: https://github.com/noahdragon
   About: /about
