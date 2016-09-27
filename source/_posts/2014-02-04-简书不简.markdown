@@ -10,7 +10,6 @@ description: Blog in a markdown way on Jianshu.
 abbrlink: 4b0eefbd
 showAd: true
 ---
-![](http://www.qinglv5.net/uploads/allimg/120801/1_120801131226_8.jpg)
 
 简书是什么？是[Tumblr](http://www.tumblr.com)么？这是我听到简书这两个字时的第一反应。（事实也证明确有渊源）
 
