@@ -31,15 +31,15 @@ vim的入门难和Emacs的后期变态让人望而生畏。vim入门难，到底
 
 当然这里要说的VIM-Adventures 不单单用游戏的形式来练习光标控制，还可以通过游戏学习到vim的按键操作。通过其可以学习的操作有：
 
-h j k l : w W e E b B x X r d dd D ~ 0 ^ $ f F t T ; , % z zt zz zb g gg G 1 2 3 4 5 6 7 8 9 count [count] * # n N p P " y yy Y reg :reg registers "" "- "_ "0 "1 "2 "3 "4 "5 "6 "7 "8 "9 "a "b "c ... "x "y "z "A "B "C ... "X "Y "Z i I a A c cc C s S o O word WORD sentence paragraph { } ( ) [{ ]} [( ]) . text-objects aw iw aW iW as is ap ip a[ a] i[ i] a( a) i( i) a< a> aB iB ab ib i< i> at it a{ a} i{ i} a" i" a' i' a`i` H M L nu nonu nu! nonu! | / ? ` ' m :marks :delm :delmarks :delm! :delmarks! undo u :undo CTRL-R :redo redo
+> h j k l : w W e E b B x X r d dd D ~ 0 ^ $ f F t T ; , % z zt zz zb g gg G 1 2 3 4 5 6 7 8 9 count [count] * # n N p P " y yy Y reg :reg registers "" "- "_ "0 "1 "2 "3 "4 "5 "6 "7 "8 "9 "a "b "c ... "x "y "z "A "B "C ... "X "Y "Z i I a A c cc C s S o O word WORD sentence paragraph { } ( ) [{ ]} [( ]) . text-objects aw iw aW iW as is ap ip a[ a] i[ i] a( a) i( i) a< a> aB iB ab ib i< i> at it a{ a} i{ i} a" i" a' i' a`i` H M L nu nonu nu! nonu! | / ? ` ' m :marks :delm :delmarks :delm! :delmarks! undo u :undo CTRL-R :redo redo
 
 在其后的章节，我将详细讲解其每一关的攻略。因为我发现本游戏不光需要知道vim的操作，还有一定的解谜成分。并通过游戏本身了解到vim编辑器一些自身的特性。
 
 敬请期待～
 
-[LEVEL 1-3](http://cn.abnerchou.me/2014/03/04/e40e2146/)
+[LEVEL 1-3](/2014/03/05/e40e2146/)
 
-[LEVEL 4 5](http://cn.abnerchou.me/2014/03/10/46d23509/)
+[LEVEL 4 5](/2014/03/11/46d23509/)
 
 抽奖活动详情
 
