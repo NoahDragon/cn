@@ -16,7 +16,7 @@ sitemap:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://cn.abnerchou.me
 root: /
-permalink: :year/:month/:day/:abbrlink/
+permalink: blog/:abbrlink/
 permalink_defaults:
 
 # Directory
@@ -69,6 +69,9 @@ theme: yinwang
 
 # Google Analytics
 # google_analyticsID: UA-48498357-2
+
+# Comments
+duoshuo_shortname: abnerchou
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

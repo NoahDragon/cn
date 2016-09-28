@@ -16,26 +16,13 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<% } %> 
-<% if (post.comments){ %>
-<!-- 多说评论框 start -->
-     <div class="ds-thread" data-thread-key="<%= post.abbrlink%>" data-title="<%= post.title%>" data-url="<%- post.permalink%>"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"abnerchou"};
-    (function() {
-    		var ds = document.createElement('script');
-		    ds.type = 'text/javascript';ds.async = true;
-		    	    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-			    	   ds.charset = 'UTF-8';
-				   	      (document.getElementsByTagName('head')[0] 
-					      						 || document.getElementsByTagName('body')[0]).appendChild(ds);
-											 })();
-											 </script>
-<!-- 多说公共JS代码 end -->
-
 <% } %>
+<div class="copyright">
+           <p><span>本文标题:</span><a href="<%- url_for(post.path)%>"><%= post.title%></a></p>
+           <p><span>文章作者:</span><a href="/" title="访问 <%= theme.author%>  的个人博客"><%= theme.author%> </a></p>
+           <p><span>发布时间:</span><%= post.date.format("YYYY年M月D日 - HH时mm分") %></p>
+           <p><span>原始链接:</span><a href="<%- url_for(post.path)%> " title="<%= post.title%> "><%= post.permalink%></a></p>
+           <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" title="Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)">"Attribution-NonCommercial 4.0"</a></p>
+           <p><span>转载请保留以上信息。</span></p>
+        </div>
 <% } %>
-
-
