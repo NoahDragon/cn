@@ -2,7 +2,8 @@
 <script src="/js/jquery-2.1.1.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <% } %>
-<% if (page.comments){ %>
+<% if (page.comments){ %>	
+<a name="BOTTOM"></a>
 <% if (config.duoshuo_shortname){ %>
 <!-- 多说评论框 start -->
      <div class="ds-thread" data-thread-key="<%= page.abbrlink%>" data-title="<%= page.title%>" data-url="<%= page.permalink%>"></div>

@@ -3,6 +3,7 @@
     <a href="<%- url_for(post.path)%>"><%= post.title%></a>
 </li>
 <% } else { %>
+<a name="TOP"></a>
 <h2 class="title"><%= post.title%></h2>
 <%- post.content %>
 <% if (post.showAd) { %>
@@ -28,4 +29,9 @@
            <p><span> 转载请保留以上信息 </span></p>
         </div>
 <% } %>
+<nav class="floating-menu">
+	<a href="#TOP" title="Top">▲</a>
+	<a href="/" title="Home">◀</a>
+	<a href="#BOTTOM" title="Bottom">▼</a>
+</nav>
 <% } %>

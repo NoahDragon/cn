@@ -17,6 +17,27 @@
 	    <%- css('css/bootstrap-theme.min.css')%>
 	<% } else { %>
 		<link href="<%- url_for(theme.css) %>/main.css?v=<%- theme.version %>" rel="stylesheet" type="text/css" />
+		<style>
+			.floating-menu {
+				font-family: sans-serif;
+				padding: 5px;;
+				width: 50px;
+				z-index: 100;
+				position: fixed;
+				bottom: 0px;
+				right: 0px;
+			}
+
+			.floating-menu a,
+			.floating-menu h3 {
+				font-size: 1em;
+				display: block;
+				margin: 0 0.5em;
+				color: Black;
+				cursor : auto;
+				border-bottom : 0;
+			}
+		</style>
 	<% } %>
     <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
 
