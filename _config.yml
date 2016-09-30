@@ -77,7 +77,7 @@ duoshuo_shortname: abnerchou
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@git.coding.net:AbnerChou/cn.git
+  repo: git@git.coding.net:AbnerChou/abnerchou.git
   branch: gh-pages
 
 # abbrlink config
