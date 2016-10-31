@@ -3,7 +3,7 @@ layout: post
 title: 忘记-忘记的
 date: '2006-08-07 20:15:00 -0400'
 comments: true
-categories:
+tags:
   - Feeling
 keywords: Feeling
 description: 忘记-忘记的

@@ -3,7 +3,7 @@ layout: post
 title: 给简书的一点建议
 date: '2014-02-17 12:46:00 -0400'
 comments: true
-categories:
+tags:
   - Review
 keywords: 'Jianshu, Review, Suggestion'
 description: Suggestion on Jianshu website.
@@ -12,7 +12,7 @@ showAd: true
 ---
 ![](http://i1.sinaimg.cn/dy/c/sd/2011-02-28/U2494P1T1D22028511F21DT20110228172620.jpg)
 
-最为简书的新人，一上来就提意见，是不是有点太……实诚了。所以很谦虚的说“一点”。其实也正因为新，所以还有一定的适应期，就把所有感受到的不便罗列如下。 ^_^ 
+最为简书的新人，一上来就提意见，是不是有点太……实诚了。所以很谦虚的说“一点”。其实也正因为新，所以还有一定的适应期，就把所有感受到的不便罗列如下。 ^_^
 
 *这些建议都成型于两周前左右，期中可能简书有所更新，有些问题可能已不存在。*
 

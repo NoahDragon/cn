@@ -3,11 +3,13 @@ layout: post
 title: 一些关于搭建网页的信息
 date: '2015-05-12 22:52:00 -0400'
 comments: true
-categories:
+tags:
   - Website
-keywords: >-
-  build website, github, digital ocean, namecheap, godaddy, jekyll, octopress,
-  disqus, google site, wordprss
+  - Jekyll
+  - Octopress
+  - Digital Ocean
+  - Namecheap
+  - GoDaddy
 description: Some info for build website.
 abbrlink: 197c2f57
 showAd: true

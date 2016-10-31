@@ -3,7 +3,7 @@ layout: post
 title: 简书不简
 date: '2014-02-04 13:24:00 -0400'
 comments: true
-categories:
+tags:
   - Review
 keywords: 'Jianshu, Review'
 description: Blog in a markdown way on Jianshu.

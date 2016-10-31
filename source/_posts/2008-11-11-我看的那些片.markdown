@@ -3,7 +3,7 @@ layout: post
 title: 我看的那些片
 date: '2008-11-11 20:15:00 -0400'
 comments: true
-categories:
+tags:
   - Movie Review
 keywords: Movie review
 description: 我看的那些片

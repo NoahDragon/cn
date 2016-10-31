@@ -3,7 +3,7 @@ layout: post
 title: 病疾理心的员序程
 date: '2014-02-16 23:26:00 -0400'
 comments: true
-categories:
+tags:
   - Programmer
   - Review
 keywords: 'Wang Yin, Programmer, Review'

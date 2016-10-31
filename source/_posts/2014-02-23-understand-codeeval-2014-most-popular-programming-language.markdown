@@ -3,7 +3,7 @@ layout: post
 title: 解读《CodeEval 2014 最流行编程语言》
 date: '2014-02-23 18:16:00 -0400'
 comments: true
-categories:
+tags:
   - Programming Language
 keywords: '2014, CodeEval, Programming Language, Popular, Review'
 description: How should we view the popular programming language.
