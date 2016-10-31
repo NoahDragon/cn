@@ -3,13 +3,14 @@ layout: post
 title: Frozen Heart Cracked Plot
 date: '2015-10-10 20:15:00 -0400'
 comments: true
+categories:
+	- 评说
 tags:
-  - Movie Review
-  - 冰雪传奇
+	- 电影
+	- 冰雪奇缘
 keywords: 'Frozen, Movie review'
 description: Movie review on Fronzen.
 abbrlink: 64cccd95
-showAd: true
 ---
 ![](http://images6.fanpop.com/image/photos/36000000/Frozen-image-frozen-36065977-2560-1600.jpg)
 

@@ -3,12 +3,14 @@ layout: post
 title: 简书不简
 date: '2014-02-04 13:24:00 -0400'
 comments: true
+categories:
+	- 评说
 tags:
-  - Review
+	- 简书
+	- 博客
 keywords: 'Jianshu, Review'
 description: Blog in a markdown way on Jianshu.
 abbrlink: 4b0eefbd
-showAd: true
 ---
 
 简书是什么？是[Tumblr](http://www.tumblr.com)么？这是我听到简书这两个字时的第一反应。（事实也证明确有渊源）

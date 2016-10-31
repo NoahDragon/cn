@@ -4,7 +4,11 @@ title: Survivor Guilt
 date: '2013-07-06 20:15:00 -0400'
 comments: true
 abbrlink: 472389dd
-showAd: true
+categories:
+	- 评说
+tags:
+	- 心理
+	- 幸存者负罪感
 ---
 Survivor Guilt 没有找到恰当的中文翻译，姑且认为是幸存者负罪感。被定义为是一种心理障碍，与创伤后心理压力紧张综合症同类。
 

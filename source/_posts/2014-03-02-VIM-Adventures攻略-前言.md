@@ -4,7 +4,11 @@ title: 《VIM-Adventures攻略》前言
 date: '2014-03-02 20:15:00 -0400'
 comments: true
 abbrlink: bfdaadb0
-showAd: true
+categories:
+	- VIM-Adventures攻略
+tags:
+	- VIM
+	- 游戏
 ---
 
 自从有了计算机，人们就想向其灌输自己的想法。

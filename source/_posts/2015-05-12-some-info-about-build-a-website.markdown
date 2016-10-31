@@ -3,16 +3,14 @@ layout: post
 title: 一些关于搭建网页的信息
 date: '2015-05-12 22:52:00 -0400'
 comments: true
+categories:
+	- 技术
 tags:
-  - Website
-  - Jekyll
-  - Octopress
-  - Digital Ocean
-  - Namecheap
-  - GoDaddy
+	- 网站
+	- 博客
+	- 域名
 description: Some info for build website.
 abbrlink: 197c2f57
-showAd: true
 ---
 此文章写于2014-Aug-01.
 

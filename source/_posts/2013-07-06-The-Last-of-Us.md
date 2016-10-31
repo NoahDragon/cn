@@ -4,7 +4,12 @@ title: The Last of Us
 date: '2013-07-06 20:15:00 -0400'
 comments: true
 abbrlink: 4ce9323d
-showAd: true
+categories:
+	- 评说
+tags:
+	- 游戏
+	- The Last Of US
+	- 介绍
 ---
 ![](/img/TLOU_Fight.jpeg)
 

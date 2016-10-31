@@ -3,9 +3,13 @@ layout: post
 title: 病疾理心的员序程
 date: '2014-02-16 23:26:00 -0400'
 comments: true
+categories:
+	- 评说
 tags:
-  - Programmer
-  - Review
+	- 王垠
+	- 程序员的心理疾病
+	- 程序员
+	- 心理
 keywords: 'Wang Yin, Programmer, Review'
 description: A review on Wang Yin's blog.
 abbrlink: 9b288bea

@@ -3,13 +3,15 @@ layout: post
 title: 你有强迫症么？
 date: '2014-02-28 00:12:00 -0400'
 comments: true
+categories:
+	- 技术
 tags:
-  - App
-  - Andriod
+	- 应用
+	- Android
+	- APP
 keywords: 'App, Android, OCD, MikeZTM'
 description: Funny tiny android app to test if you have ocd.
 abbrlink: 10b52d47
-showAd: true
 ---
 好像强迫症最近突然的流行起来，好像谁没点强迫症都不好意思见人。
 

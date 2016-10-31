@@ -2,6 +2,9 @@
 title: {{ title }}
 date: {{ date }}
 tags:
-showAd: true
+categories:
+	- Default Categories
+tags:
+	- Default Tags
 comments: true
 ---
