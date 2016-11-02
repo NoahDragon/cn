@@ -14,11 +14,11 @@ menu:
     url: /
   archives:
     url: /archives
-  tags:
-    url: /tags
   th-list:
     text: 分类
     url: /categories
+  tags:
+    url: /tags
   weibo:
     text: 微博
     url: http://www.weibo.com/lm00n
