@@ -13,11 +13,13 @@ menu:
     text: 主页
     url: /
   archives:
+    text: 存档
     url: /archives
   th-list:
     text: 分类
     url: /categories
   tags:
+    text: 标签
     url: /tags
   weibo:
     text: 微博
