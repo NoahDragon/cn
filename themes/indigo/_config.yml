@@ -17,12 +17,14 @@ menu:
   tags:
     url: /tags
   th-list:
-    text: Categories
+    text: 分类
     url: /categories
   weibo:
+    text: 微博
     url: http://www.weibo.com/lm00n
     target: _blank
   github:
+    text: GitHub
     url: https://github.com/NoahDragon
     target: _blank
 
