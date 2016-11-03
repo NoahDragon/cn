@@ -33,3 +33,7 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
+
+after_script:
+  - git remote add Coding $CODING_REPO
+  - git push Coding master
