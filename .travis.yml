@@ -19,7 +19,9 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - g++-4.8
-  ssh_known_hosts: github.com
+  ssh_known_hosts:
+      - github.com
+      - git.coding.net
 
 script:
   - npm run build
