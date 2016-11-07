@@ -23,6 +23,9 @@ addons:
       - github.com
       - git.coding.net
 
+before_script:
+  - ssh-keyscan -H -t rsa,dsa git.coding.net >> ~/.ssh/known_hosts
+
 script:
   - npm run build
   - chmod u+x .travis/deploy.sh
