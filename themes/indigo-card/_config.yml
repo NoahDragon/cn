@@ -51,7 +51,7 @@ categories_title: 分类
 # 文章截断
 excerpt_render: false
 excerpt_length: 200
-excerpt_link: 阅读全文...
+excerpt_link: 阅读全文
 mathjax: false
 archive_yearly: true
 
@@ -82,7 +82,7 @@ copyright: 本文标题： <a href="<%- url_for(post.path)%>" target="_blank"><%
 cnzz: false
 
 # Miscellaneous
-google_analytics: false
+google_analytics: UA-48498357-2
 google_site_verification: false
 
 # less

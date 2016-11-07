@@ -68,7 +68,7 @@ pagination_dir: page
 theme: indigo-card
 
 # Google Analytics
-# google_analyticsID: UA-48498357-2
+google_analyticsID: UA-48498357-2
 
 # Comments
 duoshuo_shortname: abnerchou
