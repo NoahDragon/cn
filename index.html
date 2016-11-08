@@ -1,591 +1,785 @@
+<!DOCTYPE html>
 <html>
 <head>
-	
-	<title>源来承续缘</title>
-	<meta name="keywords" content="Abner Chou Chinse Blog IT Life Feeling 琼梧 中文博客 技术 生活 感悟" />
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	
-	    <link href="/css/home.css?v=2" rel="stylesheet" type="text/css" />
-	    <link rel="stylesheet" href="/css/bootstrap.min.css">
-	    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
-	
-    <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
-
-    
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=2"/>
-    
-    
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?de4f32001a5147708e87456adf5acab4";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
-
-<link rel="canonical" href="https://cn.abnerchou.me/"/>
+  <meta charset="utf-8">
+  
+  
+  <link rel="canonical" href="ture/">
+  
+  
+  <title>源来承续缘 | A developer in limbo.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="undefined">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="源来承续缘">
+<meta property="og:url" content="https://cn.abnerchou.me/index.html">
+<meta property="og:site_name" content="源来承续缘">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="源来承续缘">
+  
+    <link rel="alternative" href="/atom.xml" title="源来承续缘" type="application/atom+xml">
+  
+  <meta name="summary" content="">
+  <link rel="shortcut icon" href="/favicon.png">
+  <link rel="stylesheet" href="/css/style.css?v=1.1.7">
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-fixed-top" style="opacity: .9" role="navigation">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">源来承续缘</a>
-        </div>
+  <div id="loading" class="active"></div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+  <aside id="menu"  >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light"><img src="https://avatars0.githubusercontent.com/u/5704064?v=3&amp;s=466"></a>
+        <hgroup class="introduce">
+          <h5 class="nickname">琼梧</h5>
+          <a href="mailto:hi@abnerchou.me" title="hi@abnerchou.me" class="mail">hi@abnerchou.me</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect active">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                存档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/lm00n" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                微博
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/NoahDragon" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                GitHub
+              </a>
+            </li>
+        
+      </ul>
+
+      <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>源来承续缘 &copy; 2006 - 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+    </div>
+  </div>
+</aside>
+  <main id="main">
+    <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">源来承续缘</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header index-header">
+
+    <div class="container">
+        <h1 class="title">源来承续缘</h1>
+        
+         
+        <h5 class="subtitle">
             
-                
-                    <li  class="active" >
-                        <a href="/"> Blog</a>
-                    </li>
-                
-                    <li >
-                        <a href="https://github.com/noahdragon"> GitHub</a>
-                    </li>
-                
-                    <li >
-                        <a href="/about"> About</a>
-                    </li>
-                
             
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+                A developer in limbo.
+            
+
+        </h5>
+        
+    </div>
+
+    
+
+</header>
+
+<div class="container body-wrap">
+
+    <ul class="post-list">
+    
+        <li class="post-list-item">
+            <article id="post-VPS服务器笔记"
+  class="article-card article-type-post" itemprop="blogPost">
+     
+    <div class="post-meta">
+        <time datetime="2016-11-03T00:30:32.000Z" itemprop="datePublished" class="post-time">
+  2016-11-02
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/笔记/">笔记</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/blog/b796bb19/">VPS服务器笔记</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+
+    
+        自从上次折腾完DNS，CloudFlare总显示域名移除（解决方法就是删除DNSPod，等CloudFlare验证后再添加回来）。虽然不知道这些是不是因为自己折腾的过，但域名分放在不同的DNS和Host上，增加了管理的难度和复杂度。
+于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。
+
+大...
+    
+    
+        <a href="/blog/b796bb19/" class="post-more waves-effect waves-button">
+            阅读全文
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VPS/">VPS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/服务器/">服务器</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item">
+            <article id="post-双语网站速度最优配置"
+  class="article-card article-type-post" itemprop="blogPost">
+     
+    <div class="post-meta">
+        <time datetime="2016-10-03T01:25:02.000Z" itemprop="datePublished" class="post-time">
+  2016-10-02
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/技术/">技术</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/blog/88900ae9/">双语网站速度最优配置</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+
+    
+        
+杂言（可以略过的文字）一般技术性文章都是发表在英文博客的，一来是可以练英文，而来中文博客内容偏文艺，太多技术性也有违主题。然而本文写英文，应该不会有太多人看的，因为需要设置中英双语的老外还是凤毛麟角的。所以本文的主体对象还是说中文的。于是就有了本文。
+TL;DR有两种方案可以使网站在国内国外访问速度达到最优：
+
+域名备案，服务器在国内，CDN配置海外节点
+无法备案域名，服务器架设在国内，通...
+    
+    
+        <a href="/blog/88900ae9/" class="post-more waves-effect waves-button">
+            阅读全文
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Coding/">Coding</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DNS/">DNS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/双语/">双语</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网站/">网站</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item">
+            <article id="post-Yin-Wang-Changes"
+  class="article-card article-type-post" itemprop="blogPost">
+     
+    <div class="post-meta">
+        <time datetime="2016-09-23T02:13:52.000Z" itemprop="datePublished" class="post-time">
+  2016-09-22
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/评说/">评说</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/blog/9cff5063/">王垠大神的蜕变</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+
+    
+        或许不用多说，明眼人一看本博客的主题，就知道王垠是我心目中计算机界的大神，虽然我也有些时候看不惯他的文章，但其观点犀利，看透业界许多随波逐流的错误观点。总体而言，还是比较喜欢和欣赏的。
+最早了解到他，是因为他总是删自己的文章。在论坛上转载的文章，往往点开已经404了。好奇害死猫，于是就越发想看删掉的，于是就利用搜索引擎，希望找回那段消失的文字。但奈何看着不比他删得快，从而现在也养成了，大神一...
+    
+    
+        <a href="/blog/9cff5063/" class="post-more waves-effect waves-button">
+            阅读全文
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/大神/">大神</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/王垠/">王垠</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item">
+            <article id="post-也谈“阿里月饼”事件"
+  class="article-card article-type-post" itemprop="blogPost">
+     
+    <div class="post-meta">
+        <time datetime="2016-09-17T02:09:35.000Z" itemprop="datePublished" class="post-time">
+  2016-09-16
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/评说/">评说</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/blog/c5821abc/">也谈“阿里月饼”事件</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+
+    
+        
+本来不想谈论这个事件，奈何实在看不惯网上那种键盘侠的，只说不练，很难想象他们是否是一个合格的软件工程师。
+首先我的观点是完全赞成阿里的处理，简单明了，不拖泥带水，充分体现了极简的设计理念。古云：勿以恶小而为之，勿以善小而不为。何谓恶小，小偷小摸，欺瞒谎骗。阿里的处理也正体验其企业的价值观，不作恶。
+总结起来，喷阿里的无外乎是两种心态：1. 人事部竟然骑到工程师头上了；2. 作为工程师，不喜...
+    
+    
+        <a href="/blog/c5821abc/" class="post-more waves-effect waves-button">
+            阅读全文
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/中秋/">中秋</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工程师/">工程师</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/月饼/">月饼</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/程序员/">程序员</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/阿里巴巴/">阿里巴巴</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item">
+            <article id="post-加拿大安大略省留学移民"
+  class="article-card article-type-post" itemprop="blogPost">
+     
+    <div class="post-meta">
+        <time datetime="2016-08-16T03:47:00.000Z" itemprop="datePublished" class="post-time">
+  2016-08-15
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/杂谈/">杂谈</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/blog/a487ac04/">加拿大安大略省留学移民</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+
+    
+        本文写于2015年2月，其中诸多政策已不适用，如有疑问可留言来信，我会尽力解答。
+加拿大移民政策在各省各不相同，在此以Ontario安大略省（安省）为例来说明如何实现通过留学途径获得加拿大永久居民身份。
+综述留学移民属于经验类移民，是在加拿大境内申请的一种移民类别，面向有在加拿大工作生活过的人士。
+通过留学途径进行移民的好处是： 以留学名义进入加拿大，更易获得加拿大认可的学历；其次毕业后加拿...
+    
+    
+        <a href="/blog/a487ac04/" class="post-more waves-effect waves-button">
+            阅读全文
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/加拿大/">加拿大</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安大略/">安大略</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/留学/">留学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移民/">移民</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item">
+            <article id="post-frozen-heart-cracked-plot"
+  class="article-card article-type-post" itemprop="blogPost">
+     
+    <div class="post-meta">
+        <time datetime="2015-10-11T00:15:00.000Z" itemprop="datePublished" class="post-time">
+  2015-10-10
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/评说/">评说</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/blog/64cccd95/">Frozen Heart Cracked Plot</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+
+    
+        
+最近《冰雪奇缘》出奇的火爆，不少人向我推荐。而且在网上听了其主题曲《Let it go》（另推荐25国语言版），被歌词深深的震撼了。
+电影开场就让人飙泪一把：当安娜坐在爱丽莎的门口反复唱“你想不想堆雪人”，并在空旷的客厅玩耍；身为独生子女能深刻的体会这欢乐背后的孤独，更何况还是有姐姐的呢。
+    
+    
+        <a href="/blog/64cccd95/" class="post-more waves-effect waves-button">
+            阅读全文
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/冰雪奇缘/">冰雪奇缘</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/电影/">电影</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item">
+            <article id="post-some-info-about-build-a-website"
+  class="article-card article-type-post" itemprop="blogPost">
+     
+    <div class="post-meta">
+        <time datetime="2015-05-13T02:52:00.000Z" itemprop="datePublished" class="post-time">
+  2015-05-12
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/技术/">技术</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/blog/197c2f57/">一些关于搭建网页的信息</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+
+    
+        此文章写于2014-Aug-01.
+这里只是罗列下搭建个人网站时的工具。
+静态网站：Github 的page功能就足以搭建一个像样的静态页面了。这里有个不错的教程。优点：免费，无限流量，几乎无当机的现象，轻松备份（使用git）缺点：无法支持动态页面（比如留言功能），整站内容可以被他人轻松拷贝（git clone）
+    
+    
+        <a href="/blog/197c2f57/" class="post-more waves-effect waves-button">
+            阅读全文
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/域名/">域名</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网站/">网站</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item">
+            <article id="post-VIM-Adventures攻略-LEVEL-4-5"
+  class="article-card article-type-post" itemprop="blogPost">
+     
+    <div class="post-meta">
+        <time datetime="2014-03-11T00:15:00.000Z" itemprop="datePublished" class="post-time">
+  2014-03-10
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/VIM-Adventures攻略/">VIM-Adventures攻略</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/blog/46d23509/">《VIM-Adventures攻略》 LEVEL 4、5</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+
+    
+        上一篇文章忘记说明文本编辑器的模式：
+
+所有文本编辑器都至少有两种模式，编辑模式和控制模式。编辑模式就是普通的文本输入，但控制模式似乎并不多见。由于平时我们所用的word并没有明确的区分这两种模式，但通过快捷键及按钮辅助，控制模式对我们也不是很陌生。
+在vim中这两种模式的切换是通过Esc键来完成的，有明确的划分。在控制模式下键盘的按键不再是简单字符，而是具有相应的控制功能。
+简单这么说明下...
+    
+    
+        <a href="/blog/46d23509/" class="post-more waves-effect waves-button">
+            阅读全文
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VIM/">VIM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/游戏/">游戏</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item">
+            <article id="post-VIM-Adventures攻略-LEVEL-1-3"
+  class="article-card article-type-post" itemprop="blogPost">
+     
+    <div class="post-meta">
+        <time datetime="2014-03-05T00:15:00.000Z" itemprop="datePublished" class="post-time">
+  2014-03-04
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/VIM-Adventures攻略/">VIM-Adventures攻略</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/blog/e40e2146/">《VIM-Adventures攻略》 LEVEL 1-3</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+
+    
+        上期有人提到此游戏烂尾。其实没有啦，作者是位“贪财”的主，不付费不给玩剩下的章节。在第三关结束时的提示也没有明确说要付费的意思。毕竟是独立游戏，要求也不能那么高了。
+第一关：
+
+学习按键（大小写有区别）：
+
+h 向左
+j 向下
+k 向上
+l 向右
+:help 查看帮助文档可以在其后跟字符来查看相应字符的功能如“:help j”
+
+这一关相对比较简单，主要是熟悉下vim的光标操作。有点难度的地...
+    
+    
+        <a href="/blog/e40e2146/" class="post-more waves-effect waves-button">
+            阅读全文
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VIM/">VIM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/游戏/">游戏</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item">
+            <article id="post-VIM-Adventures攻略-前言"
+  class="article-card article-type-post" itemprop="blogPost">
+     
+    <div class="post-meta">
+        <time datetime="2014-03-03T00:15:00.000Z" itemprop="datePublished" class="post-time">
+  2014-03-02
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/VIM-Adventures攻略/">VIM-Adventures攻略</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/blog/bfdaadb0/">《VIM-Adventures攻略》前言</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+
+    
+        自从有了计算机，人们就想向其灌输自己的想法。
+要想对其输入，自然离不开文本编辑器。
+公告：《VIM-Adventures》的作者愿意免费赠送一个此游戏的激活码给在本系列攻略中留言的用户。活动详情请见本文末。
+最近一直在学习Emacs，这个几乎和我同龄的软件，在发展如此迅速的时代依然有不少程序员的死忠粉，不禁让人诧异。友人常问：”现在既然都有IDE了，还学那么古老的编辑器干什么？” 刚开始我也...
+    
+    
+        <a href="/blog/bfdaadb0/" class="post-more waves-effect waves-button">
+            阅读全文
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VIM/">VIM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/游戏/">游戏</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+    </ul>
+
+    
+<nav id="page-nav">
+    <div class="inner">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+    </div>
 </nav>
 
-<div class="row" style="padding-top: 70px">
-    <div class="container center-block">
-        <div class="col-md-2"></div>
-        <div class="col-md-8 col-sm-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Blog</h3>
-                </div>
-                <ul class="list-group">
-                    
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/9cff5063/">王垠大神的蜕变</a>
-</li>
 
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/c5821abc/">也谈“阿里月饼”事件</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/a487ac04/">加拿大安大略省留学移民</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/64cccd95/">Frozen Heart Cracked Plot</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/197c2f57/">一些关于搭建网页的信息</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/46d23509/">《VIM-Adventures攻略》 LEVEL 4、5</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/e40e2146/">《VIM-Adventures攻略》 LEVEL 1-3</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/bfdaadb0/">《VIM-Adventures攻略》前言</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/10b52d47/">你有强迫症么？</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/fa87ae80/">解读《CodeEval 2014 最流行编程语言》</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/c2ba49a9/">断翅</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/c4e320f3/">给简书的一点建议</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/9b288bea/">病疾理心的员序程</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/4b0eefbd/">简书不简</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/784a6da/">一个配音演员</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/a52b6539/">由一道围棋题想到的</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/415d8ce0/">Are you carrying fire on 《The Road》</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/57c39641/">围棋棋力与地雷</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/b1652f16/">《The Last of Us》点点滴滴</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/bc368244/">Z!《World War Z》</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/472389dd/">Survivor Guilt</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/4ce9323d/">The Last of Us</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/105c643c/">“呵呵”“哦”之我见</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/bd1a54e6/">《送你一颗子弹》读后感</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/129ef253/">《仁医》</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/ff4a0ef6/">一个梦想</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/4b42309a/">伤感，或者感伤。</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/86ec242d/">约翰·提托（John Titor）</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/1bcaea9c/">《双星物语2》，看不出剧情和标题有什么关系</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/ec871717/">SC2群战的误区</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/78bf31c0/">梦境，是哆啦A梦的时空穿梭机？</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/481ce935/">萌！《杀客同萌》！</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/a1a1074b/">晕！《洛杉矶之战》！</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/9685a9d7/">智力运动发展之己见</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/3fd11c02/">琼蕊耹</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/7a0f7f83/">值得期待的《轩辕剑——云之遥》</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/2a1f0d7a/">血腥但不恐怖的《电锯惊魂6》</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/2fdb80df/">卡农（Canon in D major）</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/e4451b9a/">《花木兰》</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/107f8d80/">从红警看战争</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/969499a5/">娘伪中眼</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/93adfb71/">电锯惊魂PC版游戏发售</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/31bfb23d/">一步目</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/93d5f1e8/">游西峡（二）</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/a3c31d30/">游西峡（一）</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/b7a9421a/">《致命ID》&amp;《记忆碎片》</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/bf2e20d1/">Tim Braid</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/26e294cb/">漫无止境的八月</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/26e294cb/">我的日记</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/2488c1b0/">中国神话</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/4bf353a/">《Quarantine》\《隔离区》</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/6e96f928/">回程感言</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/b2f92747/">T3航站楼</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/6db0bebf/">还记得那片天空吗？</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/aebaa9c9/">CWoW-你还能走多远</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/e686b3c9/">我看的那些片</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/952ccaf2/">累</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/fe42753d/">新年的雪</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/5554ff70/">心情的心情</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/70686fc8/">常住海边</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/15e31eb7/">春的期待</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/4b8118b7/">校园,诗之章</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/556653a4/">自然的心</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/d0e08209/">围 另一种思维</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/6ff9b7a1/">匆匆的过雨</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/35ef3944/">忘记-忘记的</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/f147031/">昏昏谔谔</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/9b88dd33/">想写点东西的想法</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/3d44f617/">晨思</a>
-</li>
-
-
-                    
-                    
-<li class="list-group-item title">
-    <a href="/blog/35a5f5b5/">夏夜月影</a>
-</li>
-
-
-                    
-                    
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md-2">
-        </div>
-    </div>
 </div>
+  </main>
+  <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>var BLOG = { ROOT: '/' };
+BLOG.SHARE = {
+title: "源来承续缘",
+pic: "https://avatars0.githubusercontent.com/u/5704064?v=3&amp;s=466",
+summary: document.getElementsByName('summary')[0].content,
+url: "https://cn.abnerchou.me/" }
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+  <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script src="/js/main.min.js?v=1.1.7"></script>
 
 
 
-<!--加载导航栏所需js文件-->
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
 
-<script src="/js/jquery-2.1.1.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+<script src="/js/search.min.js?v=1.1.7"></script>
 
+
+
+
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48498357-2', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
 
 
 
