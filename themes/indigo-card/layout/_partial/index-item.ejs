@@ -21,6 +21,10 @@
         <a href="<%- url_for(post.path) %>" class="post-more waves-effect waves-button">
             <%-theme.excerpt_link%>
         </a>
+
+        <a href="<%- url_for(post.path) %>#Comments" class="post-more waves-effect waves-button">
+            <%- partial('post/comment-count', {post: post}) %>
+        </a>
     </div>
     <% if(post.tags && post.tags.length){ %>
     <div class="post-footer">
