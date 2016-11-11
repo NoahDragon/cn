@@ -52,7 +52,7 @@
         height: 25px;
         width: 100%;
     }
-    
+
     &.active {
         color: @primaryColor;
 
@@ -60,7 +60,7 @@
             border-left: 3px solid @primaryColor;
             background: rgba(0, 0, 0, .06);
         }
-        
+
     }
 }
 .post-toc-link {
@@ -80,7 +80,7 @@
 
 
 .post-article {
-    
+
     .post-content {
         padding-top: 20px;
     }
@@ -465,7 +465,7 @@
             box-shadow: 0 1px 4px 0 rgba(0,0,0,0.16);
             border-radius: 2px;
         }
-        
+
     }
 
     .post-card-title {
@@ -476,7 +476,7 @@
         padding: 0;
         margin-left: -16px;
         margin-right: -16px;
-        .prev, 
+        .prev,
         .next {
             width: 50%;
             background: #fff;
@@ -487,6 +487,21 @@
             font-size: 16px;
             line-height: 1.5;
         }
+    }
+
+	.has-jax {
+		font-size: 13px;
+	}
+
+	.MJXc-display {
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+}
+
+@media screen and (max-width:480px) {
+    .has-jax {
+        font-size: 10px;
     }
 }
 
