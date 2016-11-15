@@ -85,9 +85,9 @@ deploy:
   - type: git
     repo: git@git.coding.net:AbnerChou/abnerchou.git
     branch: gh-pages
-  #- type: git
-  #  repo: git@github.com:NoahDragon/cn.git
-  #  branch: gh-pages
+  - type: git
+    repo: git@github.com:NoahDragon/cn.git
+    branch: gh-pages
 
 # abbrlink config
 abbrlink:
