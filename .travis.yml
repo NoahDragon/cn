@@ -24,8 +24,7 @@ addons:
       - git.coding.net
 
 before_script:
-  - ssh-keyscan -H -t rsa,dsa git.coding.net >> ~/.ssh/known_hosts
-  - ssh-keyscan -H -t rsa,dsa -p 21521 118.193.213.247 >> ~/.ssh/known_hosts
+  - echo -e "StrictHostKeyChecking no\nUserKnownHostsFile /dev/null" >> ~/.ssh/config
 
 script:
   - npm run build
@@ -41,4 +40,4 @@ deploy:
 after_script:
   - git remote add Coding $CODING_REPO
   - git push Coding master
-  - rsync -e "ssh -p 21521" -a ./public/ haochen@118.193.213.247:/home/haochen/site/cn/
+  - rsync -avz -e "ssh -p 21521" ./public/ haochen@118.193.213.247:/home/haochen/site/cn/
