@@ -28,8 +28,6 @@ before_script:
   - echo -e 'Host 118.193.213.247\n\tStrictHostKeyChecking no\n' >> ~/.ssh/config
   - ssh-keyscan -H -t rsa,dsa git.coding.net >> ~/.ssh/known_hosts
   - ssh-keyscan -H -t rsa,dsa -p 21521 118.193.213.247 >> ~/.ssh/known_hosts
-  - cat ~/.ssh/known_hosts
-  - cat ~/.ssh/config
 
 script:
   - npm run build
@@ -45,4 +43,4 @@ deploy:
 after_script:
   - git remote add Coding $CODING_REPO
   - git push Coding master
-  - rsync -avz -e 'ssh -p 21521' ./public/ haochen@118.193.213.247:/home/haochen/site/cn/
+  - rsync -avz -e 'ssh -p 21521' ./public/ haochen@118.193.213.247:/home/haochen/site/root/cn/
