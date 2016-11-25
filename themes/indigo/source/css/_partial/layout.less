@@ -141,7 +141,6 @@
 #main {
     padding-left: 240px;
     min-height: 100%;
-    background: @backColor;
     .transition(.4s);
 }
 
@@ -174,12 +173,11 @@
     filter: alpha(opacity=0);
     pointer-events: none;
     .transition(.3s);
-    
+
     &.in {
         visibility: visible;
         pointer-events: auto;
-        opacity: .5;
-        filter: alpha(opacity=50);
+        opacity: .3;
     }
 }
 
@@ -211,7 +209,7 @@ a[title="站长统计"] {
 }
 
 
-@media screen and (max-width:1040px) { 
+@media screen and (max-width:1040px) {
     .container {
         width: 100%;
         padding: 20px 16px;
@@ -241,6 +239,10 @@ a[title="站长统计"] {
 
         }
 
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
 
 }

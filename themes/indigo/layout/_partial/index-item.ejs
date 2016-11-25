@@ -9,23 +9,25 @@
     <%- partial('post/title', { hasLink: true }) %>
 
     <div class="post-content" id="post-content" itemprop="postContent" >
-	    <% if(theme.excerpt_render) { %>
-	        <%- post.excerpt || post.content %>
-	    <% } else { %>
-	        <%- post.excerpt ? strip_html(post.excerpt) : truncate(strip_html(post.content), {
-	            length: theme.excerpt_length
-	        }) %>
-	    <% } %>
 
-	    <a href="<%- url_for(post.path) %>" class="post-more waves-effect waves-button">
-	        <%-theme.excerpt_link%>
-	    </a>
+    <% if(theme.excerpt_render) { %>
+        <%- post.excerpt || post.content %>
+    <% } else { %>
+        <%- post.excerpt ? strip_html(post.excerpt) : truncate(strip_html(post.content), {
+            length: theme.excerpt_length
+        }) %>
+    <% } %>
 
-	    <%- partial('post/comment-count', {post: post, isPost: false}) %>
+        <a href="<%- url_for(post.path) %>" class="post-more waves-effect waves-button">
+            <%-theme.excerpt_link%>
+        </a>
+        
+        <%- partial('post/comment-count', {post: post, isPost: false}) %>
+        
     </div>
-<% if(post.tags && post.tags.length){ %>
+    <% if(post.tags && post.tags.length){ %>
     <div class="post-footer">
         <%- partial('post/tag') %>
     </div>
-<% } %>
+    <% } %>
 </article>

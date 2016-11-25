@@ -12,7 +12,7 @@ keywords: 'Frozen, Movie review'
 description: Movie review on Fronzen.
 abbrlink: 64cccd95
 ---
-![](http://images6.fanpop.com/image/photos/36000000/Frozen-image-frozen-36065977-2560-1600.jpg)
+![爱丽莎](http://images6.fanpop.com/image/photos/36000000/Frozen-image-frozen-36065977-2560-1600.jpg)
 
 最近《冰雪奇缘》出奇的火爆，不少人向我推荐。而且在网上听了其主题曲[《Let it go》](http://v.youku.com/v_show/id_XNjQ1MTIwMzc2.html?s=105941)（另推荐[25国语言版](http://www.bilibili.tv/video/av922328/)），被歌词深深的震撼了。
 
@@ -42,4 +42,4 @@ abbrlink: 64cccd95
 
 如果拍续集的话，我一定会看。
 
-![](http://th05.deviantart.net/fs71/PRE/f/2013/355/d/6/disney_frozen_by_naschi-d6yrqdf.jpg)
+![爱丽莎](http://th05.deviantart.net/fs71/PRE/f/2013/355/d/6/disney_frozen_by_naschi-d6yrqdf.jpg)

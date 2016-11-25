@@ -16,7 +16,7 @@
         </div>
         <% }%>
         <% if(theme.share){ %>
-        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
             <i class="icon icon-lg icon-share-alt"></i>
         </a>
         <% } %>
@@ -24,22 +24,17 @@
 </header>
 <header class="content-header <%-hdClass %>">
 
-    <div class="container">
+    <div class="container fade-scale">
         <h1 class="title"><%=title %></h1>
-        
-        <%  if(is_home() || page.layout === 'page') { %> 
         <h5 class="subtitle">
-            
-            <% if('subTitle' in locals){ %>
-                <%- config.subtitle %>
-            <% } else if (page.description) {%>
-                <%- page.description %>
-            <% } else { %>
+            <% if(is_post()){ %>
                 <%- partial('post/head-meta') %>
-            <% }%>
-
+            <% } else if(is_home()){ %>
+                <%- config.subtitle %>
+            <% } else if (page.layout === 'page' && page.description) {%>
+                <%- page.description %>
+            <% } %>
         </h5>
-        <% } %>
     </div>
 
     <%- partial('tags-bar', {

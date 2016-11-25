@@ -24,7 +24,7 @@ tags:
 
 **第四关：**
 
-![](http://images.cnitblog.com/blog/605265/201403/101035419231391.jpg)
+![第四关](http://images.cnitblog.com/blog/605265/201403/101035419231391.jpg)
 
 本关学习按键：
 
@@ -38,7 +38,7 @@ tags:
 
 **第五关：**
 
-![](http://images.cnitblog.com/blog/605265/201403/101039492515063.jpg)
+![第五关](http://images.cnitblog.com/blog/605265/201403/101039492515063.jpg)
 
 * d 可与w、e、b、W、E、B、h、j、k、l、d等字符组合，用来删除字符串或者句子。 （对应英文单词Delete）
 
@@ -56,7 +56,7 @@ tags:
 
 本关难点在下图标注的蓝色区域：
 
-![](http://images.cnitblog.com/blog/605265/201403/101103428298997.jpg)
+![难点](http://images.cnitblog.com/blog/605265/201403/101103428298997.jpg)
 
 在没有提示的情况下很难想到dj或dk可以删除两行。另外一点是，X所在的位置没有标注要删除，但注意最下方的一行话：“BTW， X does mark the spot”也就是说X即是标记所在的位置，站在上图标注的蓝色方框"."上，按dB即可删除X （直接在X上按x键是不行的，不过系统会提示正确方法）。
 

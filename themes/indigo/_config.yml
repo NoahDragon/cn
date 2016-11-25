@@ -14,13 +14,13 @@ menu:
     url: /
   archives:
     text: 存档
-    url: /archives/
+    url: /archives
   th-list:
     text: 分类
-    url: /categories/
+    url: /categories
   tags:
     text: 标签
-    url: /tags/
+    url: /tags
   weibo:
     text: 微博
     url: http://www.weibo.com/lm00n
@@ -33,7 +33,7 @@ menu:
 rss: /atom.xml
 
 #你的头像url
-avatar: /avatar.jpeg
+avatar: https://avatars0.githubusercontent.com/u/5704064?v=3&s=466
 #favicon
 favicon: /favicon.png
 
