@@ -1,9 +1,9 @@
 <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
-<script src="<%= url_for('/js/main' + (cache ? '.min': '') + '.js?v=' + theme.version) %>"></script>
+<script src="<%= url_for('/js/main' + (cache ? '.min': '') + '.js?v=' + theme_version()) %>"></script>
 
 <% if (theme.search){ %>
 <%- partial('search') %>
-<script src="<%= url_for('/js/search' + (cache ? '.min': '') + '.js?v=' + theme.version) %>"></script>
+<script src="<%= url_for('/js/search' + (cache ? '.min': '') + '.js?v=' + theme_version()) %>"></script>
 <% } %>
 
 <% if (theme.mathjax){ %>
@@ -15,11 +15,11 @@
 <% } %>
 
 <% if (theme.duoshuo){ %>		
- <script src="<%= url_for('/js/embed' + (cache ? '.min': '') + '.js?v=' + theme.version) %>"></script>		
- <script src="//cdn.bootcss.com/marked/0.3.6/marked.min.js" async="async"></script>		
- <script>		
- var duoshuoQuery = {short_name:'<%=theme.duoshuo %>', theme: 'none'}		
- </script>		
+  <script src="<%= url_for('/js/embed' + (cache ? '.min': '') + '.js?v=' + theme.version) %>"></script>		
+  <script src="//cdn.bootcss.com/marked/0.3.6/marked.min.js" async="async"></script>		
+  <script>		
+  var duoshuoQuery = {short_name:'<%=theme.duoshuo %>', theme: 'none'}		
+  </script>		
 <%}%>
 
 <%- partial('google-analytics') %>
