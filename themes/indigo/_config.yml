@@ -32,7 +32,7 @@ menu:
 rss: /atom.xml
 
 #你的头像url
-avatar: /avatar.jpeg
+avatar: /avatar.jpg
 #favicon
 favicon: /favicon.png
 
@@ -53,6 +53,9 @@ excerpt_length: 200
 excerpt_link: 阅读全文
 mathjax: false
 archive_yearly: true
+
+# 是否显示文章最后更新时间
+show_last_updated: true
 
 #是否开启分享
 share: true
@@ -80,8 +83,14 @@ copyright: 本文标题： <a href="<%- url_for(post.path)%>" target="_blank"><%
 #站长统计，如要开启，输入CNZZ站点id，如 cnzz: 1255152447
 cnzz: false
 
+# 百度统计，如要开启，改为你的 key
+baidu_tongji: false
+
+# 腾讯分析，如要开启，输入站点id
+tajs: false
+
 # Miscellaneous
-google_analytics: UA-48498357-2
+google_analytics: false #UA-48498357-2
 google_site_verification: false
 
 # less
@@ -106,3 +115,8 @@ since_year: 2006
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
 about: 一个有梦的AI.
+
+# “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
+visit_counter:
+  site_uv: 总访客：
+  site_pv: 总点击：

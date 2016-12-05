@@ -215,15 +215,6 @@
 
             $('#rewardBtn').addEventListener(even, modal.toggle)
         },
-        fixNavMinH: (function () {
-            var nav = $('.nav');
-
-            function calcH() {
-                nav.style.minHeight = (nav.parentNode.clientHeight - nav.nextElementSibling.offsetHeight) + 'px';
-            }
-
-            return calcH;
-        })(),
         waterfall: function () {
 
             if (w.innerWidth < 760) return;
@@ -403,17 +394,26 @@
             forEach.call($$('.img-lightbox'), function (el) {
                 new LightBox(el)
             })
-        })()
+        })(),
+        loadScript: function (scripts) {
+            scripts.forEach(function (src) {
+                var s = d.createElement('script');
+                s.src = src;
+                s.async = true;
+                body.appendChild(s);
+            })
+        }
     };
 
     w.addEventListener('load', function () {
-        Blog.fixNavMinH();
         Blog.waterfall();
         var top = docEl.scrollTop;
         Blog.toc.fixed(top);
         Blog.toc.actived(top);
         loading.classList.remove('active');
         Blog.page.loaded();
+
+        w.lazyScripts && w.lazyScripts.length && Blog.loadScript(w.lazyScripts)
     });
 
     var ignoreUnload = false;
@@ -430,7 +430,6 @@
 
     w.addEventListener('resize', function () {
         w.BLOG.even = even = 'ontouchstart' in w ? 'touchstart' : 'click';
-        Blog.fixNavMinH();
         Blog.toggleMenu();
         Blog.waterfall();
     });
@@ -482,8 +481,11 @@
         return g
     }, w.BLOG);
 
-    Waves.init();
-    Waves.attach('.global-share li', ['waves-block']);
-    Waves.attach('.article-tag-list-link, #page-nav a, #page-nav span', ['waves-button']);
-
+    if (w.Waves) {
+        Waves.init();
+        Waves.attach('.global-share li', ['waves-block']);
+        Waves.attach('.article-tag-list-link, #page-nav a, #page-nav span', ['waves-button']);
+    } else {
+        console.error('Waves loading failed.')
+    }
 })(window, document);
