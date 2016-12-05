@@ -68,6 +68,11 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
 
+# hexo-generator-archive
+## Set per_page to 0 to disable pagination
+archive_generator:
+  per_page: 0
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
@@ -103,4 +108,3 @@ marked:
   breaks: true
   smartLists: true
   smartypants: true
-
