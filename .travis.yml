@@ -28,6 +28,7 @@ before_script:
   - echo -e 'Host 118.193.213.247\n\tStrictHostKeyChecking no\n' >> ~/.ssh/config
   - ssh-keyscan -H -t rsa,dsa git.coding.net >> ~/.ssh/known_hosts
   - ssh-keyscan -H -t rsa,dsa -p 21521 118.193.213.247 >> ~/.ssh/known_hosts
+  - curl "https://api.keycdn.com/zones/purgeurl/$CDN_ZONE_ID.json" -u $CDN_API: -X DELETE -H "Content-Type: application/json" --data '{"urls":["$CDN_ZONE_URL/index.html","$CDN_ZONE_URL/tags/index.html", "$CDN_ZONE_URL/categories/index.html", "$CDN_ZONE_URL/archives/index.html", "$CDN_ZONE_URL/sitemap.xml", "$CDN_ZONE_URL/page-sitemap.xml", "$CDN_ZONE_URL/post-sitemap.xml", "$CDN_ZONE_URL/tag-sitemap.xml","$CDN_ZONE_URL/category-sitemap.xml"]}'
 
 script:
   - npm run build
