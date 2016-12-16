@@ -14,43 +14,50 @@
     </url>
 
     <url>
+        <loc>https://cn.abnerchou.me/categories/%E6%B8%B8%E8%AE%B0/</loc>
+        <lastmod>2016-11-08T15:55:23.400Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://cn.abnerchou.me/categories/VIM-Adventures%E6%94%BB%E7%95%A5/</loc>
-        <lastmod>2016-11-04T19:18:51.921Z</lastmod>
+        <lastmod>2016-11-25T23:11:24.725Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://cn.abnerchou.me/categories/%E8%AF%91%E6%96%87/</loc>
+        <lastmod>2016-12-05T20:39:27.946Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://cn.abnerchou.me/categories/%E6%9D%82%E8%B0%88/</loc>
-        <lastmod>2016-11-04T19:18:51.922Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://cn.abnerchou.me/categories/%E8%AF%84%E8%AF%B4/</loc>
-        <lastmod>2016-11-04T19:18:51.928Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://cn.abnerchou.me/categories/%E6%8A%80%E6%9C%AF/</loc>
-        <lastmod>2016-11-04T19:18:51.928Z</lastmod>
+        <lastmod>2016-12-05T20:51:35.023Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://cn.abnerchou.me/categories/%E7%AC%94%E8%AE%B0/</loc>
-        <lastmod>2016-11-04T19:18:51.929Z</lastmod>
+        <lastmod>2016-12-07T14:57:26.895Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://cn.abnerchou.me/categories/%E6%B8%B8%E8%AE%B0/</loc>
-        <lastmod>2016-11-08T15:55:23.400Z</lastmod>
+        <loc>https://cn.abnerchou.me/categories/%E6%8A%80%E6%9C%AF/</loc>
+        <lastmod>2016-12-07T14:57:26.895Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://cn.abnerchou.me/categories/%E8%AF%84%E8%AF%B4/</loc>
+        <lastmod>2016-12-07T23:13:52.863Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

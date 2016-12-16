@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    <link rel="canonical" href="ture/blog/e4807fb/">
+    
+    
+    <title>如何搭建围棋算法间对战平台 | 源来承续缘 | A developer in limbo.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="围棋,围棋新人吧,计算机">
+    <meta name="description" content="吧友@yc10k 提到如何实现围棋算法间的对弈和比较呢？
+我以前使用的是笨办法，就是将两个软件打开，一个电脑执黑人执白，一个电脑执白人执黑，然后跟局两个软件的走步，来回在摆子即可。
+现在介绍一种能够让电脑间自动实验对弈的方法。
+首先算法必须支持GTP，即Go Text Protocol， 是一种用文本方式与计算机围棋算法交流的协议。是GMP（Go Modem Protocol）协议的改进版。 由">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何搭建围棋算法间对战平台">
+<meta property="og:url" content="https://cn.abnerchou.me/blog/e4807fb/index.html">
+<meta property="og:site_name" content="源来承续缘">
+<meta property="og:description" content="吧友@yc10k 提到如何实现围棋算法间的对弈和比较呢？
+我以前使用的是笨办法，就是将两个软件打开，一个电脑执黑人执白，一个电脑执白人执黑，然后跟局两个软件的走步，来回在摆子即可。
+现在介绍一种能够让电脑间自动实验对弈的方法。
+首先算法必须支持GTP，即Go Text Protocol， 是一种用文本方式与计算机围棋算法交流的协议。是GMP（Go Modem Protocol）协议的改进版。 由">
+<meta property="og:image" content="https://cn.abnerchou.me/img/computer-go-1.jpg">
+<meta property="og:image" content="https://cn.abnerchou.me/img/computer-go-2.jpg">
+<meta property="og:image" content="https://cn.abnerchou.me/img/computer-go-3.jpg">
+<meta property="og:image" content="https://cn.abnerchou.me/img/computer-go-4.jpg">
+<meta property="og:image" content="https://cn.abnerchou.me/img/computer-go-5.jpg">
+<meta property="og:image" content="https://cn.abnerchou.me/img/computer-go-6.jpg">
+<meta property="og:image" content="https://cn.abnerchou.me/img/computer-go-7.jpg">
+<meta property="og:image" content="https://cn.abnerchou.me/img/computer-go-8.jpg">
+<meta property="og:image" content="https://cn.abnerchou.me/img/computer-go-9.jpg">
+<meta property="og:updated_time" content="2016-12-07T14:57:26.895Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何搭建围棋算法间对战平台">
+<meta name="twitter:description" content="吧友@yc10k 提到如何实现围棋算法间的对弈和比较呢？
+我以前使用的是笨办法，就是将两个软件打开，一个电脑执黑人执白，一个电脑执白人执黑，然后跟局两个软件的走步，来回在摆子即可。
+现在介绍一种能够让电脑间自动实验对弈的方法。
+首先算法必须支持GTP，即Go Text Protocol， 是一种用文本方式与计算机围棋算法交流的协议。是GMP（Go Modem Protocol）协议的改进版。 由">
+<meta name="twitter:image" content="https://cn.abnerchou.me/img/computer-go-1.jpg">
+    
+        <link rel="alternative" href="/atom.xml" title="源来承续缘" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.0">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">琼梧</h5>
+          <a href="mailto:hi@abnerchou.me" title="hi@abnerchou.me" class="mail">hi@abnerchou.me</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives/"  >
+                <i class="icon icon-lg icon-archives"></i>
+                存档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags/"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/lm00n" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                微博
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/NoahDragon" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                GitHub
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">如何搭建围棋算法间对战平台</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">如何搭建围棋算法间对战平台</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2013-08-19T01:32:00.000Z" itemprop="datePublished" class="page-time">
+  2013-08-18
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/技术/">技术</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+<article id="post-如何搭建围棋算法间对战平台"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">如何搭建围棋算法间对战平台</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2013-8-18 21:32" datetime="2013-08-19T01:32:00.000Z"  itemprop="datePublished">2013-08-18</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/技术/">技术</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+<span>
+    <a href="/blog/e4807fb/#comments" class="ds-thread-count" data-thread-key="e4807fb" data-count-type="comments"></a>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <img src="/img/computer-go-1.jpg" title="如何搭建围棋算法间对战平台">
+<p>吧友@yc10k 提到如何实现围棋算法间的对弈和比较呢？</p>
+<p>我以前使用的是笨办法，就是将两个软件打开，一个电脑执黑人执白，一个电脑执白人执黑，然后跟局两个软件的走步，来回在摆子即可。</p>
+<p>现在介绍一种能够让电脑间自动实验对弈的方法。</p>
+<p>首先算法必须支持GTP，即Go Text Protocol， 是一种用文本方式与计算机围棋算法交流的协议。是GMP（Go Modem Protocol）协议的改进版。 由于其简单方便易读，现在很多围棋算法都遵循此协议。</p>
+<p>其次需要有能够连接两个算法的平台，这里主要介绍GoGui。这是一款开源软件，本身只提供围棋对弈的界面，不自带围棋算法。如果想要实现人机对弈，需要连接相应的围棋算法即可。唯一不方便之处就是，有些算法是可以调节难度的，在GoGui中无法直接通过界面调节，需要通过算法传参。但只要通过了解，也可以很快掌握。</p>
+<p>附件中包含了Windows版的GoGui，以及一些常见的围棋算法。</p>
+<p>AmiGo 是最早的围棋开源算法。最早是1983年Stoney Ballard使用Pascal程序所写，后于1989年Todd R. Johnson改写为C语言。相对于新近的软件算法，Amigo的棋力是比较弱的（个人感觉18k+）。</p>
+<p>Pachi 目前版本10.00，发布于2012年8月12日。棋力水平跟机子配置有关，在9×9棋盘棋力可达7D，在19×19大约1K。但在KGS上使用较为强力的计算机，棋力可达2D。如果使用计算机阵列（64台电脑，每台20核CPU），可达4D，甚至曾被让6子赢周俊勋九段。</p>
+<p>GNU Go 从其名称GNU就可看出，是一款开源的围棋算法。最新版本是2009年2月发布的3.8版本。目前GNU Go活跃KGS平台，水平从25k到10k不等。</p>
+<p>此处提供版本均为Windows版，如需Mac或Linux可通过搜索到其官方网站下载。</p>
+<p>附件（文中所用软件）：<br><a href="https://pan.baidu.com/share/link?uk=3375665472&amp;shareid=3800454386&amp;fid=2426670250" target="_blank" rel="external">gogui-1.4.7-install.exe</a><br><a href="https://pan.baidu.com/share/link?uk=3375665472&amp;shareid=3800473002&amp;fid=3100803858" target="_blank" rel="external">pachi-10.00-win32.7z</a><br><a href="https://pan.baidu.com/share/link?uk=3375665472&amp;shareid=3800489146&amp;fid=62014093" target="_blank" rel="external">amigo.rar</a><br><a href="https://pan.baidu.com/share/link?uk=3375665472&amp;shareid=3800501604&amp;fid=1844165358" target="_blank" rel="external">gnugo-3.8.rar</a></p>
+<img src="/img/computer-go-2.jpg" title="如何搭建围棋算法间对战平台">
+<p>如果希望人机对战，可以选择Program-&gt;New Program，打开如上图界面。</p>
+<p>单击Command后面的按钮，选择对应的围棋算法。</p>
+<img src="/img/computer-go-3.jpg" title="如何搭建围棋算法间对战平台">
+<p>这里我选择amigogtp算法，直接点确定，这时算法就会记录到程序中。</p>
+<p>在次通过Program-&gt;Attach-&gt;AmiGo,选择相应的程序。</p>
+<img src="/img/computer-go-4.jpg" title="如何搭建围棋算法间对战平台">
+<p>通过Game-&gt;Computer Color 可以选择电脑的黑白，就可以和电脑进行对弈了。</p>
+<img src="/img/computer-go-5.jpg" title="如何搭建围棋算法间对战平台">
+<p>如果只要设置一个围棋算法自身之间的对弈比较简单，只需要在Game-&gt;Computer Color-&gt;Both 选上后，程序会自动进行对弈。</p>
+<p>但如果要让两个算法间进行对弈，这个就比较麻烦了。首先，这里就要使用到gogui-twogtp模块。而且只能通过命令行进行调用。</p>
+<p>首先点开windows的开始菜单，在下图的框中输入CMD，回车，即可打开命令行窗口。</p>
+<img src="/img/computer-go-6.jpg" title="如何搭建围棋算法间对战平台">
+<p>打开后应该是下图的模样，然后进入GoGui的安装目录，我这里是D:\Program Files (x86)\GoGui 这时就可以尽情使用GoGui提供的各项功能。</p>
+<img src="/img/computer-go-7.jpg" title="如何搭建围棋算法间对战平台">
+<img src="/img/computer-go-8.jpg" title="如何搭建围棋算法间对战平台">
+<p>这里直接上个例子，黑棋是默认棋力的GNU GO，而白棋是棋力最高的GNU GO。调用gogui-twogtp，首先设置黑棋和白棋，其次-games是设置对局次数， -size 是设置棋盘大小， -alternate 是轮流执黑， -sgffile 对局存于文件， -auto 每局结束后自动继续。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">BLACK=&quot;gnugo --mode gtp&quot;</div><div class="line">WHITE=&quot;gnugo --mode gtp --level 5&quot;</div><div class="line">gogui-twogtp -black &quot;$BLACK&quot; -white &quot;$WHITE&quot; -games 100 \</div><div class="line">-size 9 -alternate -sgffile gnugo5 -auto</div></pre></td></tr></table></figure>
+<p>（此段代码为Linux或Mac下可用，Windows下的命令见后面）</p>
+<p>但这个方法是无法实时观测到对弈进程的，只能通过存储的文件来查看。但优点是速度快。</p>
+<p>下例是通过界面显示程序实时进程，同时还可通过Tool-&gt;Analyze在运行中调整参数。缺点就是运行较慢。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">BLACK=&quot;gnugo --mode gtp&quot;</div><div class="line">WHITE=&quot;gnugo --mode gtp --level 5&quot;</div><div class="line">gogui -program &quot;gogui-twogtp -black \&quot;$BLACK\&quot; -white \&quot;$WHITE\&quot;&quot;</div></pre></td></tr></table></figure>
+<p>（此段代码为Linux或Mac下可用，Windows下的命令见后面）</p>
+<p>上面两段例子适合作为参考，由于Windows使用的是Dos命令行，所以其命令又有所不同。<br>下面是一例，利用界面显示电脑对弈过程，黑棋是Amigo，白棋是Pachi。输入完命令，回车后，就会打开GoGui并对弈。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">D:\Program Files (x86)\GoGui&gt;gogui -program &quot;gogui-twogtp.exe -black \&quot;amigo\amigogtp.exe\&quot; -white \&quot;pachi\pachi.exe\&quot;&quot; -computer-both</div></pre></td></tr></table></figure>
+<img src="/img/computer-go-9.jpg" title="如何搭建围棋算法间对战平台">
+<p>～完～</p>
+<p>如有问题，欢迎指正。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2016-12-07T14:57:26.895Z" title="2016-12-7 9:57" itemprop="dateUpdated">2016年12月7日 9:57</time>
+</span><br>
+
+
+        本文标题： <a href="/blog/e4807fb/" target="_blank">如何搭建围棋算法间对战平台</a> <br/>发布时间： 2013年8月18日 - 21时32分 <br/>原始链接： </span><a href="/blog/e4807fb/ " title="如何搭建围棋算法间对战平台 " target="_blank">https://cn.abnerchou.me/blog/e4807fb/</a> <br/>许可协议： </span><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> <br/><br/> 转载请保留以上信息
+    </div>
+    <footer>
+        <a href="https://cn.abnerchou.me">
+            <img src="/avatar.jpg" alt="琼梧">
+            琼梧
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/围棋/">围棋</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/围棋新人吧/">围棋新人吧</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://cn.abnerchou.me/blog/e4807fb/&title=《如何搭建围棋算法间对战平台》 — 源来承续缘&pic=https://cn.abnerchou.me/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://cn.abnerchou.me/blog/e4807fb/&title=《如何搭建围棋算法间对战平台》 — 源来承续缘&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://cn.abnerchou.me/blog/e4807fb/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《如何搭建围棋算法间对战平台》 — 源来承续缘&url=https://cn.abnerchou.me/blog/e4807fb/&via=https://cn.abnerchou.me" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://cn.abnerchou.me/blog/e4807fb/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/blog/784a6da/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">一个配音演员</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/blog/5e24d26b/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">【围棋算法擂台】AmiGoGTP vs Pachi</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+<div class="comments" id="comments">
+	<div class="ds-thread" data-thread-key="e4807fb" data-title="如何搭建围棋算法间对战平台" data-url="https://cn.abnerchou.me/blog/e4807fb/"></div>
+</div>
+<script>
+lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js')
+</script>
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总点击：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+            <span>源来承续缘 &copy; 2006 - 2016</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://cn.abnerchou.me/blog/e4807fb/&title=《如何搭建围棋算法间对战平台》 — 源来承续缘&pic=https://cn.abnerchou.me/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://cn.abnerchou.me/blog/e4807fb/&title=《如何搭建围棋算法间对战平台》 — 源来承续缘&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://cn.abnerchou.me/blog/e4807fb/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《如何搭建围棋算法间对战平台》 — 源来承续缘&url=https://cn.abnerchou.me/blog/e4807fb/&via=https://cn.abnerchou.me" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://cn.abnerchou.me/blog/e4807fb/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://cn.abnerchou.me/blog/e4807fb/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+var duoshuoQuery = {short_name:'abnerchou', theme: 'none'};
+lazyScripts.push('/js/embed.min.js?v=1.4.0');
+
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.4.0"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.4.0" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>

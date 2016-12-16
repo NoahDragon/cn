@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  
-  
-  <link rel="canonical" href="ture/blog/b796bb19/">
-  
-  
-  <title>VPS服务器笔记 | 源来承续缘 | A developer in limbo.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  <meta name="theme-color" content="#3F51B5">
-  
-  
-  <meta name="keywords" content="VPS,服务器">
-  <meta name="description" content="自从上次折腾完DNS，CloudFlare总显示域名移除（解决方法就是删除DNSPod，等CloudFlare验证后再添加回来）。虽然不知道这些是不是因为自己折腾的过，但域名分放在不同的DNS和Host上，增加了管理的难度和复杂度。
-于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。
+    
 
-大名在外">
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    <link rel="canonical" href="ture/blog/b796bb19/">
+    
+    
+    <title>VPS服务器笔记 | 源来承续缘 | A developer in limbo.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="VPS,服务器">
+    <meta name="description" content="自从上次折腾完DNS，CloudFlare总显示域名移除（解决方法就是删除DNSPod，等CloudFlare验证后再添加回来）。虽然不知道这些是不是因为自己折腾的过，但域名分放在不同的DNS和Host上，增加了管理的难度和复杂度。
+于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VPS服务器笔记">
 <meta property="og:url" content="https://cn.abnerchou.me/blog/b796bb19/index.html">
 <meta property="og:site_name" content="源来承续缘">
 <meta property="og:description" content="自从上次折腾完DNS，CloudFlare总显示域名移除（解决方法就是删除DNSPod，等CloudFlare验证后再添加回来）。虽然不知道这些是不是因为自己折腾的过，但域名分放在不同的DNS和Host上，增加了管理的难度和复杂度。
-于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。
-
-大名在外">
+于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。">
 <meta property="og:image" content="https://cn.abnerchou.me/img/vps_1.jpg">
-<meta property="og:updated_time" content="2016-11-04T19:18:51.929Z">
+<meta property="og:image" content="https://cn.abnerchou.me/\img\vps_2.png">
+<meta property="og:image" content="https://cn.abnerchou.me/\img\vps_3.png">
+<meta property="og:image" content="https://cn.abnerchou.me/\img\vps_4.png">
+<meta property="og:updated_time" content="2016-11-25T21:27:24.950Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VPS服务器笔记">
 <meta name="twitter:description" content="自从上次折腾完DNS，CloudFlare总显示域名移除（解决方法就是删除DNSPod，等CloudFlare验证后再添加回来）。虽然不知道这些是不是因为自己折腾的过，但域名分放在不同的DNS和Host上，增加了管理的难度和复杂度。
-于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。
-
-大名在外">
+于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。">
 <meta name="twitter:image" content="https://cn.abnerchou.me/img/vps_1.jpg">
-  
-    <link rel="alternative" href="/atom.xml" title="源来承续缘" type="application/atom+xml">
-  
-  <meta name="summary" content="">
-  <link rel="shortcut icon" href="/favicon.png">
-  <link rel="stylesheet" href="/css/style.css?v=1.1.7">
+    
+        <link rel="alternative" href="/atom.xml" title="源来承续缘" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.0">
+    <script>window.lazyScripts=[]</script>
 </head>
 
 <body>
-  <div id="loading" class="active"></div>
+    <div id="loading" class="active"></div>
 
-  <aside id="menu" class="hide" >
+    <aside id="menu" class="hide" >
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
     </a>
     <div class="brand-wrap">
       <div class="brand">
-        <a href="/" class="avatar waves-effect waves-circle waves-light"><img src="https://avatars0.githubusercontent.com/u/5704064?v=3&amp;s=466"></a>
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/avatar.jpg">
+        </a>
         <hgroup class="introduce">
           <h5 class="nickname">琼梧</h5>
           <a href="mailto:hi@abnerchou.me" title="hi@abnerchou.me" class="mail">hi@abnerchou.me</a>
@@ -71,21 +78,21 @@
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="/archives"  >
+              <a href="/archives/"  >
                 <i class="icon icon-lg icon-archives"></i>
                 存档
               </a>
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="/categories"  >
+              <a href="/categories/"  >
                 <i class="icon icon-lg icon-th-list"></i>
                 分类
               </a>
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="/tags"  >
+              <a href="/tags/"  >
                 <i class="icon icon-lg icon-tags"></i>
                 标签
               </a>
@@ -106,20 +113,12 @@
             </li>
         
       </ul>
-
-      <footer class="footer">
-  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
-  <p>源来承续缘 &copy; 2006 - 2016</p>
-  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
-  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
-  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
-</footer>
-
     </div>
   </div>
 </aside>
-  <main id="main">
-    <header class="top-header" id="header">
+
+    <main id="main">
+        <header class="top-header" id="header">
     <div class="flex-row">
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
@@ -137,7 +136,7 @@
         </div>
         
         
-        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
             <i class="icon icon-lg icon-share-alt"></i>
         </a>
         
@@ -145,10 +144,19 @@
 </header>
 <header class="content-header post-header">
 
-    <div class="container">
+    <div class="container fade-scale">
         <h1 class="title">VPS服务器笔记</h1>
-        
-        
+        <h5 class="subtitle">
+            
+                <time datetime="2016-11-03T00:30:32.000Z" itemprop="datePublished" class="page-time">
+  2016-11-02
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/笔记/">笔记</a></li></ul>
+
+            
+        </h5>
     </div>
 
     
@@ -161,31 +169,47 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#大名在外无需解释的服务商"><span class="post-toc-number">1.</span> <span class="post-toc-text">大名在外无需解释的服务商</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Digital-Ocean"><span class="post-toc-number">2.</span> <span class="post-toc-text">Digital Ocean</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Linode"><span class="post-toc-number">3.</span> <span class="post-toc-text">Linode</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Vultr"><span class="post-toc-number">4.</span> <span class="post-toc-text">Vultr</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#vr-org"><span class="post-toc-number">5.</span> <span class="post-toc-text">vr.org</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Bandwagon"><span class="post-toc-number">6.</span> <span class="post-toc-text">Bandwagon</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#PZEA"><span class="post-toc-number">7.</span> <span class="post-toc-text">PZEA</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Virmach"><span class="post-toc-number">8.</span> <span class="post-toc-text">Virmach</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#HostGator"><span class="post-toc-number">9.</span> <span class="post-toc-text">HostGator</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Starry"><span class="post-toc-number">10.</span> <span class="post-toc-text">Starry</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#OpenShift-和-Heroku"><span class="post-toc-number">11.</span> <span class="post-toc-text">OpenShift 和 Heroku</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#后记"><span class="post-toc-number">12.</span> <span class="post-toc-text">后记</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#大名在外无需解释的服务商"><span class="post-toc-number">1.</span> <span class="post-toc-text">大名在外无需解释的服务商</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Digital-Ocean"><span class="post-toc-number">2.</span> <span class="post-toc-text">Digital Ocean</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Linode"><span class="post-toc-number">3.</span> <span class="post-toc-text">Linode</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Vultr"><span class="post-toc-number">4.</span> <span class="post-toc-text">Vultr</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#vr-org"><span class="post-toc-number">5.</span> <span class="post-toc-text">vr.org</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Bandwagon"><span class="post-toc-number">6.</span> <span class="post-toc-text">Bandwagon</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#PZEA"><span class="post-toc-number">7.</span> <span class="post-toc-text">PZEA</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Virmach"><span class="post-toc-number">8.</span> <span class="post-toc-text">Virmach</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#HostGator"><span class="post-toc-number">9.</span> <span class="post-toc-text">HostGator</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Starry"><span class="post-toc-number">10.</span> <span class="post-toc-text">Starry</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#OpenShift-和-Heroku"><span class="post-toc-number">11.</span> <span class="post-toc-text">OpenShift 和 Heroku</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Kimsufi"><span class="post-toc-number">12.</span> <span class="post-toc-text">Kimsufi</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#OVH"><span class="post-toc-number">13.</span> <span class="post-toc-text">OVH</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#36Cloud-和-SunnyVision"><span class="post-toc-number">14.</span> <span class="post-toc-text">36Cloud 和 SunnyVision</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#VPS的Ping值比较"><span class="post-toc-number">15.</span> <span class="post-toc-text">VPS的Ping值比较</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#DO的新加坡节点"><span class="post-toc-number">15.1.</span> <span class="post-toc-text">DO的新加坡节点</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Vultr日本节点"><span class="post-toc-number">15.2.</span> <span class="post-toc-text">Vultr日本节点</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#淘宝买的香港VPS"><span class="post-toc-number">15.3.</span> <span class="post-toc-text">淘宝买的香港VPS</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#后记"><span class="post-toc-number">16.</span> <span class="post-toc-text">后记</span></a></li></ol>
         </nav>
     </aside>
     
-<article id="post-VPS服务器笔记" 
-  class="post-article article-type-post" itemprop="blogPost">
+<article id="post-VPS服务器笔记"
+  class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
         <h1 class="post-card-title">VPS服务器笔记</h1>
         <div class="post-meta">
-            <time datetime="2016-11-03T00:30:32.000Z" itemprop="datePublished" class="post-time">
-  2016-11-02
-</time>
+            <time class="post-time" title="2016-11-2 20:30" datetime="2016-11-03T00:30:32.000Z"  itemprop="datePublished">2016-11-02</time>
 
             
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/笔记/">笔记</a></li></ul>
 
 
 
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+<span>
+    <a href="/blog/b796bb19/#comments" class="ds-thread-count" data-thread-key="b796bb19" data-count-type="comments"></a>
+</span>
+
+
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             <p>自从上次<a href="http://cn.abnerchou.me/blog/88900ae9/">折腾完DNS</a>，CloudFlare总显示域名移除（解决方法就是删除DNSPod，等CloudFlare验证后再添加回来）。虽然不知道这些是不是因为自己折腾的过，但域名分放在不同的DNS和Host上，增加了管理的难度和复杂度。</p>
 <p>于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。</p>
-<p><img src="/img/vps_1.jpg" alt="VPS Image"></p>
-<h4 id="大名在外无需解释的服务商"><a href="#大名在外无需解释的服务商" class="headerlink" title="大名在外无需解释的服务商"></a>大名在外无需解释的服务商</h4><p><a href="https://cn.aliyun.com/" target="_blank" rel="external">阿里云</a>，<a href="https://www.qcloud.com/" target="_blank" rel="external">腾讯云</a>，以及国内一众VPS服务商。国内访问速度肯定没得说，但域名备案是一个相当头痛的事，而且阿里云的备案不能用在腾讯云的服务器上，切换服务商需要重新备案。备案将主机与域名绑定，使选择服务商上面失去了相当大的自由度。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/vps_1.jpg" alt="VPS" title="">
+                </div>
+                <div class="image-caption">VPS</div>
+            </figure>
+<h4 id="大名在外无需解释的服务商"><a href="#大名在外无需解释的服务商" class="headerlink" title="大名在外无需解释的服务商"></a>大名在外无需解释的服务商</h4><p><a href="https://cn.aliyun.com/" target="_blank" rel="external">阿里云</a>，<a href="https://www.qcloud.com/" target="_blank" rel="external">腾讯云</a>，以及国内一众VPS服务商。国内访问速度肯定没得说，但域名备案是一个相当头痛的事，而且阿里云的备案不能用在腾讯云的服务器上，切换服务商需要重新备案。备案将主机与域名绑定，使选择服务商上面失去了相当大的自由度。虽然支持多地备案，但根据<a href="http://bbs.qcloud.com/thread-9889-1-1.html" target="_blank" rel="external">此处回复</a>，顶级域名只能在注册服务商处使用，次级域名不限。</p>
 <p>但如果面向群体是国内用户，使用国内的运营商是毋庸置疑的。但如果考虑方便，自由的程度，请移步看以下服务商。</p>
 <h4 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean"></a>Digital Ocean</h4><p><a href="https://m.do.co/c/eaf9c533bc55" target="_blank" rel="external">DO</a>算是国内知名度最高的海外云主机运营商。因其超高的性价比，以及便捷的设置，迅速赢得大众的青睐。其中新加坡节点和旧金山节点，是国内用户最常选用的。关于节点的对比请移步<a href="https://www.91yun.org/zh/archives/878" target="_blank" rel="external">此处</a>。</p>
 <p>PS：目前注册输入优惠码<code>ACTIVATE10</code>可获得$10。</p>
@@ -201,22 +225,60 @@
 <h4 id="HostGator"><a href="#HostGator" class="headerlink" title="HostGator"></a>HostGator</h4><p><a href="http://www.hostgator.com/" target="_blank" rel="external">HostGator</a>著名的鳄鱼人。Hosting服务价格优惠，而且经常打折，但VPS价格偏高，且没有太多的配置可选。</p>
 <h4 id="Starry"><a href="#Starry" class="headerlink" title="Starry"></a>Starry</h4><p><a href="https://www.starrydns.com/sc/hong-kong-vps" target="_blank" rel="external">Starry</a>又是一家香港的VPS服务商，提供针对大陆的线路优化（包括CN2线路）。但价钱比阿里云都贵。</p>
 <h4 id="OpenShift-和-Heroku"><a href="#OpenShift-和-Heroku" class="headerlink" title="OpenShift 和 Heroku"></a>OpenShift 和 Heroku</h4><p><a href="https://www.openshift.com" target="_blank" rel="external">OpenShift</a>和<a href="https://www.heroku.com" target="_blank" rel="external">Heroku</a>是两个提供免费服务的云应用平台。入门门槛较高，需要一定计算机背景。而且毕竟不是VPS，在一些主机配置方面也多有限制。服务器都在欧美。速度未知。</p>
+<h4 id="Kimsufi"><a href="#Kimsufi" class="headerlink" title="Kimsufi"></a>Kimsufi</h4><p><a href="https://www.kimsufi.com/en/" target="_blank" rel="external">Kimsufi</a> 最便宜的独立服务器，最低4.99欧元每月。相比VPS内存，空间等配置绝对出众。节点有欧洲和美国，但据说国内速度不是很理想。用来挂机等不需要持续操作的计算比较合适。</p>
+<p>不少服务器都被抢购一空，可以通过<a href="http://api.check100.xyz/kimsufi/kimsufi-checking.php" target="_blank" rel="external">这个网页</a>来监测是否有货。</p>
+<h4 id="OVH"><a href="#OVH" class="headerlink" title="OVH"></a>OVH</h4><p><a href="https://www.ovh.com/ca/en/vps/vps-ssd.xml" target="_blank" rel="external">OVH</a> 提供的云服务器内从较高。$4.49的即可获得2G内存，但是CPU是共享，以及硬盘只有10GB SSD。所以基本可用的配置是$8.99， 2.4GHz 1 vCore 4GB RAM 20GB SSD，相比价钱配置已经相当可以。而且2016黑五活动，直接年付，将减半价。</p>
+<h4 id="36Cloud-和-SunnyVision"><a href="#36Cloud-和-SunnyVision" class="headerlink" title="36Cloud 和 SunnyVision"></a>36Cloud 和 SunnyVision</h4><p><a href="http://www.36cloud.com/" target="_blank" rel="external">36Cloud</a>据说和<a href="http://www.sunnyvision.com/" target="_blank" rel="external">SunnyVision</a>是一家，都是提供香港VPS的服务商。价格中等，从中间服务商处购买会有优惠。</p>
+<p>OVH和SunnyVision的信息来自: <a href="https://ze3kr.com/2016/07/move-to-ovh-and-sunnyvision/" target="_blank" rel="external">从 Vultr 迁至 OVH &amp; SunnyVision</a></p>
+<h4 id="VPS的Ping值比较"><a href="#VPS的Ping值比较" class="headerlink" title="VPS的Ping值比较"></a>VPS的Ping值比较</h4><p>使用站长之家的<a href="http://tool.chinaz.com/sitespeed" target="_blank" rel="external">Ping检测工具</a>来比较了自己的几个VPS的连接速度：</p>
+<h5 id="DO的新加坡节点"><a href="#DO的新加坡节点" class="headerlink" title="DO的新加坡节点"></a>DO的新加坡节点</h5><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="\img\vps_2.png" alt="新加坡节点Ping测试" title="">
+                </div>
+                <div class="image-caption">新加坡节点Ping测试</div>
+            </figure>
+<p>速度真的不可原谅，这哪里是个亚洲节点应有的速度，怪不得不少人宁可选DO的旧金山节点也不用新加坡。</p>
+<h5 id="Vultr日本节点"><a href="#Vultr日本节点" class="headerlink" title="Vultr日本节点"></a>Vultr日本节点</h5><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="\img\vps_3.png" alt="日本节点Ping测试" title="">
+                </div>
+                <div class="image-caption">日本节点Ping测试</div>
+            </figure>
+<p>可以接受的速度，至少挂代理和VPN没问题。</p>
+<h5 id="淘宝买的香港VPS"><a href="#淘宝买的香港VPS" class="headerlink" title="淘宝买的香港VPS"></a>淘宝买的香港VPS</h5><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="\img\vps_4.png" alt="香港VPS" title="">
+                </div>
+                <div class="image-caption">香港VPS</div>
+            </figure>
+<p>毕竟是国内，速度没得说，最重要的是还不需要备案。价钱较阿里云腾讯云等更加合理。</p>
 <h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><p>以上为个人笔记，将不定期更新。如果激活码或者链接失效，也欢迎留言指正。</p>
 
         </div>
-        
+
         <blockquote class="post-copyright">
     <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2016-11-25T21:27:24.950Z" title="2016-11-25 16:27" itemprop="dateUpdated">2016年11月25日 16:27</time>
+</span><br>
+
+
         本文标题： <a href="/blog/b796bb19/" target="_blank">VPS服务器笔记</a> <br/>发布时间： 2016年11月2日 - 20时30分 <br/>原始链接： </span><a href="/blog/b796bb19/ " title="VPS服务器笔记 " target="_blank">https://cn.abnerchou.me/blog/b796bb19/</a> <br/>许可协议： </span><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> <br/><br/> 转载请保留以上信息
     </div>
     <footer>
         <a href="https://cn.abnerchou.me">
-            <img src="https://avatars0.githubusercontent.com/u/5704064?v=3&s=466" alt="琼梧">
+            <img src="/avatar.jpg" alt="琼梧">
             琼梧
         </a>
     </footer>
 </blockquote>
+
         
+
 
         <div class="post-footer">
             
@@ -224,54 +286,65 @@
 
 
             
-<div class="post-share-wrap">
-    <div class="post-share" id="post-share">
-    <div class="tit">分享到：</div>
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://cn.abnerchou.me/blog/b796bb19/&title=《VPS服务器笔记》 — 源来承续缘&pic=https://cn.abnerchou.me/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
       <li>
-        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
           <i class="icon icon-weixin"></i>
         </a>
       </li>
       <li>
-        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://cn.abnerchou.me/blog/b796bb19/&title=《VPS服务器笔记》 — 源来承续缘&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://cn.abnerchou.me/blog/b796bb19/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《VPS服务器笔记》 — 源来承续缘&url=https://cn.abnerchou.me/blog/b796bb19/&via=https://cn.abnerchou.me" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
-          豆
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://cn.abnerchou.me/blog/b796bb19/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
         </a>
       </li>
     </ul>
  </div>
 
-    <a href="javascript:;" id="share-fab" class="post-share-fab waves-effect waves-circle">
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
         <i class="icon icon-share-alt icon-lg"></i>
     </a>
 </div>
 
 
+
         </div>
-    </div>   
+    </div>
 
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/blog/23ed47e2/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">寻找於春景君</h4>
+      </a>
+    </div>
   
 
   
@@ -285,16 +358,18 @@
 </nav>
 
 
-            
+
     
-<div class="duoshuo">
+
+<div class="comments" id="comments">
 	<div class="ds-thread" data-thread-key="b796bb19" data-title="VPS服务器笔记" data-url="https://cn.abnerchou.me/blog/b796bb19/"></div>
 </div>
-<script src="/js/embed.min.js?v=1.1.7"></script>
-<script src="//cdn.bootcss.com/marked/0.3.6/marked.min.js" async="async"></script>
 <script>
-var duoshuoQuery = {short_name:'abnerchou', theme: 'none'}
+lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js')
 </script>
+
+
+
 
 
 
@@ -302,58 +377,98 @@ var duoshuoQuery = {short_name:'abnerchou', theme: 'none'}
 </article>
 
 
+
 </div>
-  </main>
-  <div class="mask" id="mask"></div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总点击：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+            <span>源来承续缘 &copy; 2006 - 2016</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
-<script>var BLOG = { ROOT: '/' };
-BLOG.SHARE = {
-title: "VPS服务器笔记",
-pic: "https://avatars0.githubusercontent.com/u/5704064?v=3&amp;s=466",
-summary: document.getElementsByName('summary')[0].content,
-url: "https://cn.abnerchou.me/blog/b796bb19/" }
-</script>
-<div class="global-share" id="global-share">
-    <div class="tit">分享到：</div>
+
+
+<div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://cn.abnerchou.me/blog/b796bb19/&title=《VPS服务器笔记》 — 源来承续缘&pic=https://cn.abnerchou.me/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
       <li>
-        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
           <i class="icon icon-weixin"></i>
         </a>
       </li>
       <li>
-        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://cn.abnerchou.me/blog/b796bb19/&title=《VPS服务器笔记》 — 源来承续缘&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://cn.abnerchou.me/blog/b796bb19/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《VPS服务器笔记》 — 源来承续缘&url=https://cn.abnerchou.me/blog/b796bb19/&via=https://cn.abnerchou.me" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
-          豆
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://cn.abnerchou.me/blog/b796bb19/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
         </a>
       </li>
     </ul>
  </div>
 
 
-  <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
-<script src="/js/main.min.js?v=1.1.7"></script>
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://cn.abnerchou.me/blog/b796bb19/" alt="微信分享二维码">
+</div>
 
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+var duoshuoQuery = {short_name:'abnerchou', theme: 'none'};
+lazyScripts.push('/js/embed.min.js?v=1.4.0');
+
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.4.0"></script>
 
 
 <div class="search-panel" id="search-panel">
@@ -373,27 +488,14 @@ url: "https://cn.abnerchou.me/blog/b796bb19/" }
 </li>
 </template>
 
-<script src="/js/search.min.js?v=1.1.7"></script>
+<script src="/js/search.min.js?v=1.4.0" async></script>
 
 
 
 
 
 
-
-<!-- Google Analytics -->
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-48498357-2', 'auto');
-ga('send', 'pageview');
-
-</script>
-<!-- End Google Analytics -->
-
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 </body>
