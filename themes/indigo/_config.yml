@@ -81,7 +81,7 @@ toc:
   list_number: true  # 是否显示数字排序
 
 #文章页版权声明内容，hexo中所有变量及辅助函数等均可调用，具体请查阅 hexo.io
-copyright: 本文标题： <a href="<%- url_for(post.path)%>" target="_blank"><%= post.title%></a> <br/>发布时间： <%= post.date.format("YYYY年M月D日 - HH时mm分") %> <br/>原始链接： </span><a href="<%- url_for(post.path)%> " title="<%= post.title%> " target="_blank"><%= post.permalink%></a> <br/>许可协议： </span><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> <br/><br/> 转载请保留以上信息
+copyright: 本文标题： <a href="<%- url_for(post.path)%>" target="_blank"><%= post.title%></a> <br/>发布时间： <%= post.date.format("YYYY年M月D日 - HH时mm分") %> <br/>原始链接： </span><a href="<%- url_for(post.path)%> " title="<%= post.title%> " target="_blank"><%= post.permalink%></a> <br/>新博客： </span><a href="http://legofan.cc " title="乐高饭" target="_blank">乐高饭</a> <br/>许可协议： </span><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> <br/><br/> 转载请保留以上信息
 
 #站长统计，如要开启，输入CNZZ站点id，如 cnzz: 1255152447
 cnzz: false
