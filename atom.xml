@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cn.abnerchou.me/"/>
-  <updated>2016-12-30T18:21:45.533Z</updated>
+  <updated>2017-01-01T00:57:30.491Z</updated>
   <id>https://cn.abnerchou.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://cn.abnerchou.me/blog/96f8d899/"/>
     <id>https://cn.abnerchou.me/blog/96f8d899/</id>
     <published>2016-12-20T09:16:47.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<p>本博客已迁移至 <a href="http://legofan.cc" target="_blank" rel="external">legofan.cc</a>, 详细迁移过程请参看<a href="http://legofan.cc/new-blog-new-feel-new-year/" target="_blank" rel="external">新博</a>。</p>
 <p>本博仍欢迎留言评论，所有联系方式不变。</p>
@@ -46,7 +46,7 @@
     <link href="https://cn.abnerchou.me/blog/903c7941/"/>
     <id>https://cn.abnerchou.me/blog/903c7941/</id>
     <published>2016-12-07T16:51:37.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<img src="/img/xinrenba.jpg" title="围棋新人吧">
 <p>2013-2014 年间，出于对围棋的热爱，加入了围棋新人吧。当时正出于贴吧飞速发展的时代（现在增速不清楚），像D吧这种大吧，每天新增帖子数以万计。围棋新人吧也借着当时的势头，在一年内会员数从20增长到1000+，日发帖量从不足10到100+。</p>
@@ -91,7 +91,7 @@
     <link href="https://cn.abnerchou.me/blog/23ed47e2/"/>
     <id>https://cn.abnerchou.me/blog/23ed47e2/</id>
     <published>2016-11-21T20:55:43.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>本文起因源自<a href="https://www.zhihu.com/question/21575367" target="_blank" rel="external">知乎</a>一问题：</p>
 <blockquote>
@@ -173,7 +173,7 @@
     <link href="https://cn.abnerchou.me/blog/b796bb19/"/>
     <id>https://cn.abnerchou.me/blog/b796bb19/</id>
     <published>2016-11-02T20:30:32.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<p>自从上次<a href="http://cn.abnerchou.me/blog/88900ae9/">折腾完DNS</a>，CloudFlare总显示域名移除（解决方法就是删除DNSPod，等CloudFlare验证后再添加回来）。虽然不知道这些是不是因为自己折腾的过，但域名分放在不同的DNS和Host上，增加了管理的难度和复杂度。</p>
 <p>于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。</p>
@@ -253,7 +253,7 @@
     <link href="https://cn.abnerchou.me/blog/88900ae9/"/>
     <id>https://cn.abnerchou.me/blog/88900ae9/</id>
     <published>2016-10-02T21:25:02.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<figure class="image-bubble">
                 <div class="img-lightbox">
@@ -383,7 +383,7 @@
     <link href="https://cn.abnerchou.me/blog/9cff5063/"/>
     <id>https://cn.abnerchou.me/blog/9cff5063/</id>
     <published>2016-09-22T22:13:52.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<p>或许不用多说，明眼人一看本博客的主题，就知道<a href="http://www.yinwang.org/" target="_blank" rel="external">王垠</a>是我心目中计算机界的大神，虽然我也有些时候看不惯他的<a href="/blog/9b288bea/">文章</a>，但其观点犀利，看透业界许多随波逐流的错误观点。总体而言，还是比较喜欢和欣赏的。</p>
 <p>最早了解到他，是因为他总是删自己的文章。在论坛上转载的文章，往往点开已经404了。好奇害死猫，于是就越发想看删掉的，于是就利用搜索引擎，希望找回那段消失的文字。但奈何看着不比他删得快，从而现在也养成了，大神一发文，就存到Evernote的习惯。或许我这里存的文章比王垠自己的都多呢。</p>
@@ -437,7 +437,7 @@
     <link href="https://cn.abnerchou.me/blog/c5821abc/"/>
     <id>https://cn.abnerchou.me/blog/c5821abc/</id>
     <published>2016-09-16T22:09:35.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<figure class="image-bubble">
                 <div class="img-lightbox">
@@ -499,7 +499,7 @@
     <link href="https://cn.abnerchou.me/blog/a487ac04/"/>
     <id>https://cn.abnerchou.me/blog/a487ac04/</id>
     <published>2016-08-16T03:47:00.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<p><strong>本文写于2015年2月，其中诸多政策已不适用，如有疑问可留言来信，我会尽力解答。</strong></p>
 <p>加拿大移民政策在各省各不相同，在此以Ontario安大略省（安省）为例来说明如何实现通过留学途径获得加拿大永久居民身份。</p>
@@ -569,7 +569,7 @@
     <link href="https://cn.abnerchou.me/blog/64cccd95/"/>
     <id>https://cn.abnerchou.me/blog/64cccd95/</id>
     <published>2015-10-11T00:15:00.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<figure class="image-bubble">
                 <div class="img-lightbox">
@@ -630,7 +630,7 @@
     <link href="https://cn.abnerchou.me/blog/197c2f57/"/>
     <id>https://cn.abnerchou.me/blog/197c2f57/</id>
     <published>2015-05-13T02:52:00.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<p>此文章写于2014-Aug-01.</p>
 <p>这里只是罗列下搭建个人网站时的工具。</p>
@@ -668,7 +668,7 @@
     <link href="https://cn.abnerchou.me/blog/46d23509/"/>
     <id>https://cn.abnerchou.me/blog/46d23509/</id>
     <published>2014-03-11T00:15:00.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<p>上一篇文章忘记说明文本编辑器的模式：</p>
 <blockquote>
@@ -759,7 +759,7 @@
     <link href="https://cn.abnerchou.me/blog/e40e2146/"/>
     <id>https://cn.abnerchou.me/blog/e40e2146/</id>
     <published>2014-03-05T00:15:00.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<p>上期有人提到此游戏烂尾。其实没有啦，作者是位“贪财”的主，不付费不给玩剩下的章节。在第三关结束时的提示也没有明确说要付费的意思。毕竟是独立游戏，要求也不能那么高了。</p>
 <p><strong>第一关：</strong></p>
@@ -865,7 +865,7 @@
     <link href="https://cn.abnerchou.me/blog/bfdaadb0/"/>
     <id>https://cn.abnerchou.me/blog/bfdaadb0/</id>
     <published>2014-03-03T00:15:00.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<p>自从有了计算机，人们就想向其灌输自己的想法。</p>
 <p>要想对其输入，自然离不开文本编辑器。</p>
@@ -927,7 +927,7 @@
     <link href="https://cn.abnerchou.me/blog/10b52d47/"/>
     <id>https://cn.abnerchou.me/blog/10b52d47/</id>
     <published>2014-02-28T04:12:00.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<p>好像强迫症最近突然的流行起来，好像谁没点强迫症都不好意思见人。</p>
 <p><img src="http://images.cnitblog.com/blog/605265/201402/272253582995159.jpg" alt="谢耳朵" height="530" width="415" align="absmiddle"></p>
@@ -978,7 +978,7 @@
     <link href="https://cn.abnerchou.me/blog/fa87ae80/"/>
     <id>https://cn.abnerchou.me/blog/fa87ae80/</id>
     <published>2014-02-23T22:16:00.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<figure class="image-bubble">
                 <div class="img-lightbox">
@@ -1038,7 +1038,7 @@
     <link href="https://cn.abnerchou.me/blog/c2ba49a9/"/>
     <id>https://cn.abnerchou.me/blog/c2ba49a9/</id>
     <published>2014-02-22T00:15:00.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<p>梦·翱翔</p>
 <p>飞过蓝色的空，身后划过淡淡的痕迹。骄傲地望向身后，一望无际的白云与山峦。面前是无边的海，海的尽头是温暖的南海岛国。</p>
@@ -1070,7 +1070,7 @@
     <link href="https://cn.abnerchou.me/blog/c4e320f3/"/>
     <id>https://cn.abnerchou.me/blog/c4e320f3/</id>
     <published>2014-02-17T16:46:00.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<figure class="image-bubble">
                 <div class="img-lightbox">
@@ -1190,7 +1190,7 @@
     <link href="https://cn.abnerchou.me/blog/9b288bea/"/>
     <id>https://cn.abnerchou.me/blog/9b288bea/</id>
     <published>2014-02-17T03:26:00.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<p>题目请倒过来读。</p>
 <p>如果读过原文的，一看就明了此文的用意。是针对<a href="http://www.yinwang.org/" target="_blank" rel="external">王银</a>的《程序员的心理疾病》的一篇反文。</p>
@@ -1242,7 +1242,7 @@
     <link href="https://cn.abnerchou.me/blog/4b0eefbd/"/>
     <id>https://cn.abnerchou.me/blog/4b0eefbd/</id>
     <published>2014-02-04T17:24:00.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<p>简书是什么？是<a href="http://www.tumblr.com" target="_blank" rel="external">Tumblr</a>么？这是我听到简书这两个字时的第一反应。（事实也证明确有渊源）</p>
 <p>怎么发现简书的呢？这要从最近的琐事说起了。前几日突然想起落满灰尘的RSS，打开Google Reader，竟被告知已关闭。而且连备份也没有，不由得郁闷。于是又在Mac上鼓捣了一下午的Feed Reader。功夫不负有心人，终于把以前订阅的所有RSS都找到了（总共也没几个）。</p>
@@ -1287,7 +1287,7 @@
     <link href="https://cn.abnerchou.me/blog/d15b43c9/"/>
     <id>https://cn.abnerchou.me/blog/d15b43c9/</id>
     <published>2013-12-09T02:57:32.000Z</published>
-    <updated>2016-12-30T18:21:45.533Z</updated>
+    <updated>2017-01-01T00:57:30.491Z</updated>
     
     <content type="html"><![CDATA[<img src="/img/qishou.jpg" title="世界智力精英运动会日本围棋选手介绍">
 <p>来自中国、欧洲、日本、韩国，以及北美的30位棋手（18位男棋手，12位女棋手）齐聚北京，角逐今年世界精英运动会的奖金。比赛将于十二月12日至18日举行。</p>
