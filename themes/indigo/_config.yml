@@ -93,8 +93,8 @@ baidu_tongji: false
 tajs: false
 
 # Miscellaneous
-google_analytics: false #UA-48498357-2
-google_site_verification: false
+google_analytics: UA-48498357-2
+google_site_verification: 5KHrxbgzmVfL1xBXXk67ha7VgpxJt60eK3BR1rKrhGA
 
 # less
 less:
