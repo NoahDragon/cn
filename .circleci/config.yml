@@ -25,7 +25,9 @@ jobs:
           - v1-dependencies-{{ checksum "package.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-
+      
+      # install dependency
+      - run: sudo apt install -y rsync
       - run: yarn install
       - run: echo -e 'Host 118.193.213.247\n\tStrictHostKeyChecking no\n' >> ~/.ssh/config
       - run: ssh-keyscan -H -t rsa,dsa git.coding.net >> ~/.ssh/known_hosts
