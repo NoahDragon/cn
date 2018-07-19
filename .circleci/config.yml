@@ -29,6 +29,8 @@ jobs:
       # install dependency
       - run: sudo apt update
       - run: npm install
+      - run: git config --global user.email "hi@abnerchou.me"
+      - run: git config --global user.name "Abner"
       - run: npm run build
       - run: npm run deploy
 
