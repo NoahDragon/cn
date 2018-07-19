@@ -44,3 +44,4 @@ after_script:
   - git remote add Coding $CODING_REPO
   - git push Coding master
   - rsync -avz -e 'ssh -p 21521' ./public/ haochen@118.193.213.247:/home/haochen/site/root/cn/
+  
