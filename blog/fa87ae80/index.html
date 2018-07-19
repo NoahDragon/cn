@@ -12,6 +12,15 @@ ga('send', 'pageview');
 <!-- End Google Analytics -->
 
 
+    <script type="text/javascript">
+    window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', 'ae3414607baf5955828355f216e36d048b7a4905');
+</script>
+
     
 
     
@@ -34,14 +43,16 @@ ga('send', 'pageview');
     
     <meta name="keywords" content="程序语言,CodeEval">
     <meta name="description" content="How should we view the popular programming language.">
+<meta name="keywords" content="2014, CodeEval, Programming Language, Popular, Review">
 <meta property="og:type" content="article">
 <meta property="og:title" content="解读《CodeEval 2014 最流行编程语言》">
 <meta property="og:url" content="https://cn.abnerchou.me/blog/fa87ae80/index.html">
 <meta property="og:site_name" content="源来承续缘">
 <meta property="og:description" content="How should we view the popular programming language.">
+<meta property="og:locale" content="cn">
 <meta property="og:image" content="http://images.cnitblog.com/blog/605265/201402/230529284143047.jpg">
 <meta property="og:image" content="http://images.cnitblog.com/blog/605265/201402/230531525241340.png">
-<meta property="og:updated_time" content="2017-01-01T00:57:30.491Z">
+<meta property="og:updated_time" content="2018-07-19T20:03:30.052Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解读《CodeEval 2014 最流行编程语言》">
 <meta name="twitter:description" content="How should we view the popular programming language.">
@@ -213,7 +224,7 @@ ga('send', 'pageview');
                 </div>
                 <div class="image-caption"></div>
             </figure>
-<p>首先了解下<a href="http://www.codeeval.com" target="_blank" rel="external">CodeEval</a>是做什么的:</p>
+<p>首先了解下<a href="http://www.codeeval.com" target="_blank" rel="noopener">CodeEval</a>是做什么的:</p>
 <blockquote>
 <p>A tool for auto evaluating programming challenges in C/C++/Java/Python/ Ruby/PHP/Perl/ Scala/Clojure/C#/Tcl/ JavaScript/ Haskell/Go/ Bash/Lua and many more.</p>
 </blockquote>
@@ -229,7 +240,7 @@ ga('send', 'pageview');
 <p>而第二种用户，是已经掌握了一至二种语言，需要练习第三种语言，纯为娱乐。往往会使用一些与主流程序语言，或者其工作中常用的程序语言所不同的。</p>
 <p>第三种用户，为了获取面试机会，一定会选取高效快速的程序语言。</p>
 <p>再者，由于解题多用到命令行文件输入，就笔者经验（C/C++/C#/Java/Python/JavaScript/PHP),Python的文件操作最简单快捷。对于字符串转浮点整形等也是相当轻松。有些题目甚至Python只需一个函数就解决了，比如将输入文本的字母大写转成小写，小写转成大写。</p>
-<p>之所以<a href="http://www.python.org/" target="_blank" rel="external">Python</a>为何能成为榜首，可以看出：一是由于其简单易学，二是由于其方便简洁的文本文档的操作方式，三是丰富的内置函数。</p>
+<p>之所以<a href="http://www.python.org/" target="_blank" rel="noopener">Python</a>为何能成为榜首，可以看出：一是由于其简单易学，二是由于其方便简洁的文本文档的操作方式，三是丰富的内置函数。</p>
 <p>Code Eval对程序的硬性限制只有一条（除去编译错误），就是运行时间不得超过10秒。但就其简单和中级的题（占总题量70%左右）来看，要写出超过10秒运行的程序也难。</p>
 <p>在挑战题目时，用户也不许要考虑内存，CPU运算速度，网络，硬盘操作等问题。（具体CodeEval的编译环境配置未知）</p>
 <p>综上，Python远较其它语言更适合进行解题。但鄙人在日常使用Python时，深受其速度拖累，核心算法还是首选C++或Java。</p>
@@ -241,7 +252,7 @@ ga('send', 'pageview');
                 </div>
                 <div class="image-caption"></div>
             </figure>
-<p>英文报道：<a href="http://blog.codeeval.com/2014#.UwkgkHVdWKk" target="_blank" rel="external">点我</a></p>
+<p>英文报道：<a href="http://blog.codeeval.com/2014#.UwkgkHVdWKk" target="_blank" rel="noopener">点我</a></p>
 
         </div>
 
@@ -249,7 +260,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-01-01T00:57:30.491Z" title="2017-1-1 0:57" itemprop="dateUpdated">2017年1月1日 0:57</time>
+    最后更新时间：<time datetime="2018-07-19T20:03:30.052Z" title="2018-7-19 20:03" itemprop="dateUpdated">2018年7月19日 20:03</time>
 </span><br>
 
 
@@ -392,7 +403,7 @@ lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js')
     <div class="bottom">
         <p>
             <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
-            <span>源来承续缘 &copy; 2006 - 2017</span>
+            <span>源来承续缘 &copy; 2006 - 2018</span>
         </p>
     </div>
 </footer>

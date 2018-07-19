@@ -12,6 +12,15 @@ ga('send', 'pageview');
 <!-- End Google Analytics -->
 
 
+    <script type="text/javascript">
+    window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', 'ae3414607baf5955828355f216e36d048b7a4905');
+</script>
+
     
 
     
@@ -33,23 +42,22 @@ ga('send', 'pageview');
     
     
     <meta name="keywords" content="VPS,服务器">
-    <meta name="description" content="自从上次折腾完DNS，CloudFlare总显示域名移除（解决方法就是删除DNSPod，等CloudFlare验证后再添加回来）。虽然不知道这些是不是因为自己折腾的过，但域名分放在不同的DNS和Host上，增加了管理的难度和复杂度。
-于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。">
+    <meta name="description" content="自从上次折腾完DNS，CloudFlare总显示域名移除（解决方法就是删除DNSPod，等CloudFlare验证后再添加回来）。虽然不知道这些是不是因为自己折腾的过，但域名分放在不同的DNS和Host上，增加了管理的难度和复杂度。 于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。">
+<meta name="keywords" content="VPS,服务器">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VPS服务器笔记">
 <meta property="og:url" content="https://cn.abnerchou.me/blog/b796bb19/index.html">
 <meta property="og:site_name" content="源来承续缘">
-<meta property="og:description" content="自从上次折腾完DNS，CloudFlare总显示域名移除（解决方法就是删除DNSPod，等CloudFlare验证后再添加回来）。虽然不知道这些是不是因为自己折腾的过，但域名分放在不同的DNS和Host上，增加了管理的难度和复杂度。
-于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。">
+<meta property="og:description" content="自从上次折腾完DNS，CloudFlare总显示域名移除（解决方法就是删除DNSPod，等CloudFlare验证后再添加回来）。虽然不知道这些是不是因为自己折腾的过，但域名分放在不同的DNS和Host上，增加了管理的难度和复杂度。 于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。">
+<meta property="og:locale" content="cn">
 <meta property="og:image" content="https://cn.abnerchou.me/img/vps_1.jpg">
-<meta property="og:image" content="https://cn.abnerchou.me/\img\vps_2.png">
-<meta property="og:image" content="https://cn.abnerchou.me/\img\vps_3.png">
-<meta property="og:image" content="https://cn.abnerchou.me/\img\vps_4.png">
-<meta property="og:updated_time" content="2017-01-01T00:57:30.491Z">
+<meta property="og:image" content="https://cn.abnerchou.me/img/vps_2.png">
+<meta property="og:image" content="https://cn.abnerchou.me/img/vps_3.png">
+<meta property="og:image" content="https://cn.abnerchou.me/img/vps_4.png">
+<meta property="og:updated_time" content="2018-07-19T20:03:30.052Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VPS服务器笔记">
-<meta name="twitter:description" content="自从上次折腾完DNS，CloudFlare总显示域名移除（解决方法就是删除DNSPod，等CloudFlare验证后再添加回来）。虽然不知道这些是不是因为自己折腾的过，但域名分放在不同的DNS和Host上，增加了管理的难度和复杂度。
-于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。">
+<meta name="twitter:description" content="自从上次折腾完DNS，CloudFlare总显示域名移除（解决方法就是删除DNSPod，等CloudFlare验证后再添加回来）。虽然不知道这些是不是因为自己折腾的过，但域名分放在不同的DNS和Host上，增加了管理的难度和复杂度。 于是研究了下VPS服务器，需要兼顾以下两点，国内外的访问速度以及无需备案。总结起来，最好的方案就是香港机房。但考虑到性价比，海外机房也是可以纳入选择范围。">
 <meta name="twitter:image" content="https://cn.abnerchou.me/img/vps_1.jpg">
     
         <link rel="alternative" href="/atom.xml" title="源来承续缘" type="application/atom+xml">
@@ -227,28 +235,28 @@ ga('send', 'pageview');
                 </div>
                 <div class="image-caption">VPS</div>
             </figure>
-<h4 id="大名在外无需解释的服务商"><a href="#大名在外无需解释的服务商" class="headerlink" title="大名在外无需解释的服务商"></a>大名在外无需解释的服务商</h4><p><a href="https://cn.aliyun.com/" target="_blank" rel="external">阿里云</a>，<a href="https://www.qcloud.com/" target="_blank" rel="external">腾讯云</a>，以及国内一众VPS服务商。国内访问速度肯定没得说，但域名备案是一个相当头痛的事，而且阿里云的备案不能用在腾讯云的服务器上，切换服务商需要重新备案。备案将主机与域名绑定，使选择服务商上面失去了相当大的自由度。虽然支持多地备案，但根据<a href="http://bbs.qcloud.com/thread-9889-1-1.html" target="_blank" rel="external">此处回复</a>，顶级域名只能在注册服务商处使用，次级域名不限。</p>
+<h4 id="大名在外无需解释的服务商"><a href="#大名在外无需解释的服务商" class="headerlink" title="大名在外无需解释的服务商"></a>大名在外无需解释的服务商</h4><p><a href="https://cn.aliyun.com/" target="_blank" rel="noopener">阿里云</a>，<a href="https://www.qcloud.com/" target="_blank" rel="noopener">腾讯云</a>，以及国内一众VPS服务商。国内访问速度肯定没得说，但域名备案是一个相当头痛的事，而且阿里云的备案不能用在腾讯云的服务器上，切换服务商需要重新备案。备案将主机与域名绑定，使选择服务商上面失去了相当大的自由度。虽然支持多地备案，但根据<a href="http://bbs.qcloud.com/thread-9889-1-1.html" target="_blank" rel="noopener">此处回复</a>，顶级域名只能在注册服务商处使用，次级域名不限。</p>
 <p>但如果面向群体是国内用户，使用国内的运营商是毋庸置疑的。但如果考虑方便，自由的程度，请移步看以下服务商。</p>
-<h4 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean"></a>Digital Ocean</h4><p><a href="https://m.do.co/c/eaf9c533bc55" target="_blank" rel="external">DO</a>算是国内知名度最高的海外云主机运营商。因其超高的性价比，以及便捷的设置，迅速赢得大众的青睐。其中新加坡节点和旧金山节点，是国内用户最常选用的。关于节点的对比请移步<a href="https://www.91yun.org/zh/archives/878" target="_blank" rel="external">此处</a>。</p>
+<h4 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean"></a>Digital Ocean</h4><p><a href="https://m.do.co/c/eaf9c533bc55" target="_blank" rel="noopener">DO</a>算是国内知名度最高的海外云主机运营商。因其超高的性价比，以及便捷的设置，迅速赢得大众的青睐。其中新加坡节点和旧金山节点，是国内用户最常选用的。关于节点的对比请移步<a href="https://www.91yun.org/zh/archives/878" target="_blank" rel="noopener">此处</a>。</p>
 <p>PS：目前注册输入优惠码<code>ACTIVATE10</code>可获得$10。</p>
-<h4 id="Linode"><a href="#Linode" class="headerlink" title="Linode"></a>Linode</h4><p><a href="https://www.linode.com/?r=31b7ad9bbcdac84ed780e48344212c99afcaa3d2" target="_blank" rel="external">Linode</a>算是与DO齐名的美国服务商，因其有日本节点，也备受国人青睐。配置也较DO要高些，当然价格最低也要$10起。但最近其日本节点莫名消失，不知何时才能恢复。</p>
+<h4 id="Linode"><a href="#Linode" class="headerlink" title="Linode"></a>Linode</h4><p><a href="https://www.linode.com/?r=31b7ad9bbcdac84ed780e48344212c99afcaa3d2" target="_blank" rel="noopener">Linode</a>算是与DO齐名的美国服务商，因其有日本节点，也备受国人青睐。配置也较DO要高些，当然价格最低也要$10起。但最近其日本节点莫名消失，不知何时才能恢复。</p>
 <p>PS: 目前注册输入优惠码<code>PodcastInIt20</code>可获得$20。</p>
-<h4 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr"></a>Vultr</h4><p><a href="http://www.vultr.com/?ref=7025798" target="_blank" rel="external">Vultr</a>最低$5起，配置较DO略高，有768M。有东京和新加坡节点。支持信用卡，paypal，bitcoin支付。其新加坡机房与日本机房速度评测请移步<a href="https://www.freehao123.com/vultr-vps-jp-sg/" target="_blank" rel="external">此处</a>（总结下就是日本机房较好）。</p>
+<h4 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr"></a>Vultr</h4><p><a href="http://www.vultr.com/?ref=7025798" target="_blank" rel="noopener">Vultr</a>最低$5起，配置较DO略高，有768M。有东京和新加坡节点。支持信用卡，paypal，bitcoin支付。其新加坡机房与日本机房速度评测请移步<a href="https://www.freehao123.com/vultr-vps-jp-sg/" target="_blank" rel="noopener">此处</a>（总结下就是日本机房较好）。</p>
 <p>PS: 现在注册输入优惠码<code>DOMORE</code>可获得$50（6个月有效期）。</p>
-<h4 id="vr-org"><a href="#vr-org" class="headerlink" title="vr.org"></a>vr.org</h4><p><a href="http://vr.org" target="_blank" rel="external">vr.org</a>是一个知名的香港VPS运营商，目前主要针对企业用户。对于个人用户可到其<a href="https://www.tqhosting.com/cloud" target="_blank" rel="external">分公司</a>注册。其国内外的访问速度是毋庸置疑，而且支持CN2线路。但价格也是比较贵，$20的最低配置只相当于DO$10的配置。</p>
-<h4 id="Bandwagon"><a href="#Bandwagon" class="headerlink" title="Bandwagon"></a>Bandwagon</h4><p><a href="https://bwh1.net" target="_blank" rel="external">Bandwagon</a>俗称搬瓦工，节点主要在美国。以性价高著称，低配年费只要$19.99。支持Paypal，支付宝，并且支持SS一键配置。特别适合搭建VPN。据说此前还有年费$9.99的配置，可惜已经断货。</p>
-<h4 id="PZEA"><a href="#PZEA" class="headerlink" title="PZEA"></a>PZEA</h4><p><a href="https://www.pzea.com" target="_blank" rel="external">PZEA</a>美国西海岸节点VPS。最低$12每年的服务费，让其性价比突破天际了，比平时吃顿饭都便宜。</p>
-<h4 id="Virmach"><a href="#Virmach" class="headerlink" title="Virmach"></a>Virmach</h4><p><a href="https://virmach.com" target="_blank" rel="external">Virmach</a>也是高性价比的VPS。其年费最低只需$10，但配置甚至不及一台586，内存只有128M。</p>
+<h4 id="vr-org"><a href="#vr-org" class="headerlink" title="vr.org"></a>vr.org</h4><p><a href="http://vr.org" target="_blank" rel="noopener">vr.org</a>是一个知名的香港VPS运营商，目前主要针对企业用户。对于个人用户可到其<a href="https://www.tqhosting.com/cloud" target="_blank" rel="noopener">分公司</a>注册。其国内外的访问速度是毋庸置疑，而且支持CN2线路。但价格也是比较贵，$20的最低配置只相当于DO$10的配置。</p>
+<h4 id="Bandwagon"><a href="#Bandwagon" class="headerlink" title="Bandwagon"></a>Bandwagon</h4><p><a href="https://bwh1.net" target="_blank" rel="noopener">Bandwagon</a>俗称搬瓦工，节点主要在美国。以性价高著称，低配年费只要$19.99。支持Paypal，支付宝，并且支持SS一键配置。特别适合搭建VPN。据说此前还有年费$9.99的配置，可惜已经断货。</p>
+<h4 id="PZEA"><a href="#PZEA" class="headerlink" title="PZEA"></a>PZEA</h4><p><a href="https://www.pzea.com" target="_blank" rel="noopener">PZEA</a>美国西海岸节点VPS。最低$12每年的服务费，让其性价比突破天际了，比平时吃顿饭都便宜。</p>
+<h4 id="Virmach"><a href="#Virmach" class="headerlink" title="Virmach"></a>Virmach</h4><p><a href="https://virmach.com" target="_blank" rel="noopener">Virmach</a>也是高性价比的VPS。其年费最低只需$10，但配置甚至不及一台586，内存只有128M。</p>
 <p>PS：目前注册输入优惠码<code>WHT25</code>可获得七五折。也就是低配只需要$7.5。真是没有最便宜，只有更便宜……</p>
-<h4 id="HostGator"><a href="#HostGator" class="headerlink" title="HostGator"></a>HostGator</h4><p><a href="http://www.hostgator.com/" target="_blank" rel="external">HostGator</a>著名的鳄鱼人。Hosting服务价格优惠，而且经常打折，但VPS价格偏高，且没有太多的配置可选。</p>
-<h4 id="Starry"><a href="#Starry" class="headerlink" title="Starry"></a>Starry</h4><p><a href="https://www.starrydns.com/sc/hong-kong-vps" target="_blank" rel="external">Starry</a>又是一家香港的VPS服务商，提供针对大陆的线路优化（包括CN2线路）。但价钱比阿里云都贵。</p>
-<h4 id="OpenShift-和-Heroku"><a href="#OpenShift-和-Heroku" class="headerlink" title="OpenShift 和 Heroku"></a>OpenShift 和 Heroku</h4><p><a href="https://www.openshift.com" target="_blank" rel="external">OpenShift</a>和<a href="https://www.heroku.com" target="_blank" rel="external">Heroku</a>是两个提供免费服务的云应用平台。入门门槛较高，需要一定计算机背景。而且毕竟不是VPS，在一些主机配置方面也多有限制。服务器都在欧美。速度未知。</p>
-<h4 id="Kimsufi"><a href="#Kimsufi" class="headerlink" title="Kimsufi"></a>Kimsufi</h4><p><a href="https://www.kimsufi.com/en/" target="_blank" rel="external">Kimsufi</a> 最便宜的独立服务器，最低4.99欧元每月。相比VPS内存，空间等配置绝对出众。节点有欧洲和美国，但据说国内速度不是很理想。用来挂机等不需要持续操作的计算比较合适。</p>
-<p>不少服务器都被抢购一空，可以通过<a href="http://api.check100.xyz/kimsufi/kimsufi-checking.php" target="_blank" rel="external">这个网页</a>来监测是否有货。</p>
-<h4 id="OVH"><a href="#OVH" class="headerlink" title="OVH"></a>OVH</h4><p><a href="https://www.ovh.com/ca/en/vps/vps-ssd.xml" target="_blank" rel="external">OVH</a> 提供的云服务器内从较高。$4.49的即可获得2G内存，但是CPU是共享，以及硬盘只有10GB SSD。所以基本可用的配置是$8.99， 2.4GHz 1 vCore 4GB RAM 20GB SSD，相比价钱配置已经相当可以。而且2016黑五活动，直接年付，将减半价。</p>
-<h4 id="36Cloud-和-SunnyVision"><a href="#36Cloud-和-SunnyVision" class="headerlink" title="36Cloud 和 SunnyVision"></a>36Cloud 和 SunnyVision</h4><p><a href="http://www.36cloud.com/" target="_blank" rel="external">36Cloud</a>据说和<a href="http://www.sunnyvision.com/" target="_blank" rel="external">SunnyVision</a>是一家，都是提供香港VPS的服务商。价格中等，从中间服务商处购买会有优惠。</p>
-<p>OVH和SunnyVision的信息来自: <a href="https://ze3kr.com/2016/07/move-to-ovh-and-sunnyvision/" target="_blank" rel="external">从 Vultr 迁至 OVH &amp; SunnyVision</a></p>
-<h4 id="VPS的Ping值比较"><a href="#VPS的Ping值比较" class="headerlink" title="VPS的Ping值比较"></a>VPS的Ping值比较</h4><p>使用站长之家的<a href="http://tool.chinaz.com/sitespeed" target="_blank" rel="external">Ping检测工具</a>来比较了自己的几个VPS的连接速度：</p>
+<h4 id="HostGator"><a href="#HostGator" class="headerlink" title="HostGator"></a>HostGator</h4><p><a href="http://www.hostgator.com/" target="_blank" rel="noopener">HostGator</a>著名的鳄鱼人。Hosting服务价格优惠，而且经常打折，但VPS价格偏高，且没有太多的配置可选。</p>
+<h4 id="Starry"><a href="#Starry" class="headerlink" title="Starry"></a>Starry</h4><p><a href="https://www.starrydns.com/sc/hong-kong-vps" target="_blank" rel="noopener">Starry</a>又是一家香港的VPS服务商，提供针对大陆的线路优化（包括CN2线路）。但价钱比阿里云都贵。</p>
+<h4 id="OpenShift-和-Heroku"><a href="#OpenShift-和-Heroku" class="headerlink" title="OpenShift 和 Heroku"></a>OpenShift 和 Heroku</h4><p><a href="https://www.openshift.com" target="_blank" rel="noopener">OpenShift</a>和<a href="https://www.heroku.com" target="_blank" rel="noopener">Heroku</a>是两个提供免费服务的云应用平台。入门门槛较高，需要一定计算机背景。而且毕竟不是VPS，在一些主机配置方面也多有限制。服务器都在欧美。速度未知。</p>
+<h4 id="Kimsufi"><a href="#Kimsufi" class="headerlink" title="Kimsufi"></a>Kimsufi</h4><p><a href="https://www.kimsufi.com/en/" target="_blank" rel="noopener">Kimsufi</a> 最便宜的独立服务器，最低4.99欧元每月。相比VPS内存，空间等配置绝对出众。节点有欧洲和美国，但据说国内速度不是很理想。用来挂机等不需要持续操作的计算比较合适。</p>
+<p>不少服务器都被抢购一空，可以通过<a href="http://api.check100.xyz/kimsufi/kimsufi-checking.php" target="_blank" rel="noopener">这个网页</a>来监测是否有货。</p>
+<h4 id="OVH"><a href="#OVH" class="headerlink" title="OVH"></a>OVH</h4><p><a href="https://www.ovh.com/ca/en/vps/vps-ssd.xml" target="_blank" rel="noopener">OVH</a> 提供的云服务器内从较高。$4.49的即可获得2G内存，但是CPU是共享，以及硬盘只有10GB SSD。所以基本可用的配置是$8.99， 2.4GHz 1 vCore 4GB RAM 20GB SSD，相比价钱配置已经相当可以。而且2016黑五活动，直接年付，将减半价。</p>
+<h4 id="36Cloud-和-SunnyVision"><a href="#36Cloud-和-SunnyVision" class="headerlink" title="36Cloud 和 SunnyVision"></a>36Cloud 和 SunnyVision</h4><p><a href="http://www.36cloud.com/" target="_blank" rel="noopener">36Cloud</a>据说和<a href="http://www.sunnyvision.com/" target="_blank" rel="noopener">SunnyVision</a>是一家，都是提供香港VPS的服务商。价格中等，从中间服务商处购买会有优惠。</p>
+<p>OVH和SunnyVision的信息来自: <a href="https://ze3kr.com/2016/07/move-to-ovh-and-sunnyvision/" target="_blank" rel="noopener">从 Vultr 迁至 OVH &amp; SunnyVision</a></p>
+<h4 id="VPS的Ping值比较"><a href="#VPS的Ping值比较" class="headerlink" title="VPS的Ping值比较"></a>VPS的Ping值比较</h4><p>使用站长之家的<a href="http://tool.chinaz.com/sitespeed" target="_blank" rel="noopener">Ping检测工具</a>来比较了自己的几个VPS的连接速度：</p>
 <h5 id="DO的新加坡节点"><a href="#DO的新加坡节点" class="headerlink" title="DO的新加坡节点"></a>DO的新加坡节点</h5><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
@@ -281,7 +289,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-01-01T00:57:30.491Z" title="2017-1-1 0:57" itemprop="dateUpdated">2017年1月1日 0:57</time>
+    最后更新时间：<time datetime="2018-07-19T20:03:30.052Z" title="2018-7-19 20:03" itemprop="dateUpdated">2018年7月19日 20:03</time>
 </span><br>
 
 
@@ -419,7 +427,7 @@ lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js')
     <div class="bottom">
         <p>
             <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
-            <span>源来承续缘 &copy; 2006 - 2017</span>
+            <span>源来承续缘 &copy; 2006 - 2018</span>
         </p>
     </div>
 </footer>

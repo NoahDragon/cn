@@ -12,6 +12,15 @@ ga('send', 'pageview');
 <!-- End Google Analytics -->
 
 
+    <script type="text/javascript">
+    window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', 'ae3414607baf5955828355f216e36d048b7a4905');
+</script>
+
     
 
     
@@ -34,13 +43,15 @@ ga('send', 'pageview');
     
     <meta name="keywords" content="简书,建议">
     <meta name="description" content="Suggestion on Jianshu website.">
+<meta name="keywords" content="Jianshu, Review, Suggestion">
 <meta property="og:type" content="article">
 <meta property="og:title" content="给简书的一点建议">
 <meta property="og:url" content="https://cn.abnerchou.me/blog/c4e320f3/index.html">
 <meta property="og:site_name" content="源来承续缘">
 <meta property="og:description" content="Suggestion on Jianshu website.">
+<meta property="og:locale" content="cn">
 <meta property="og:image" content="http://i1.sinaimg.cn/dy/c/sd/2011-02-28/U2494P1T1D22028511F21DT20110228172620.jpg">
-<meta property="og:updated_time" content="2017-01-01T00:57:30.491Z">
+<meta property="og:updated_time" content="2018-07-19T20:03:30.052Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="给简书的一点建议">
 <meta name="twitter:description" content="Suggestion on Jianshu website.">
@@ -253,7 +264,7 @@ ga('send', 'pageview');
 <ul>
 <li>搜索跳谷歌</li>
 </ul>
-<p>在Mac上有个BUG，就是跳转谷歌后显示的是空页面，并不是搜索结果。同时感觉哪怕使用iframe的方式，也不要跳转出去较好。跳转出去后原有的简书边框，用户图标等均缺失。如想执行其它操作就需要切换回来，比较影响用户体验。对于自建网页搜索引擎，推荐使用开源的<a href="https://nutch.apache.org" target="_blank" rel="external">Apache Nutch</a>。</p>
+<p>在Mac上有个BUG，就是跳转谷歌后显示的是空页面，并不是搜索结果。同时感觉哪怕使用iframe的方式，也不要跳转出去较好。跳转出去后原有的简书边框，用户图标等均缺失。如想执行其它操作就需要切换回来，比较影响用户体验。对于自建网页搜索引擎，推荐使用开源的<a href="https://nutch.apache.org" target="_blank" rel="noopener">Apache Nutch</a>。</p>
 <ul>
 <li>写作页面分三列是为何？</li>
 </ul>
@@ -279,7 +290,7 @@ ga('send', 'pageview');
 </ul>
 <p>理由同上。同时对于平板和手机上查看简书文章造成不便。</p>
 <ul>
-<li><a href="http://logdown.com" target="_blank" rel="external">Logdown</a>: Markdown上传图片解决方案</li>
+<li><a href="http://logdown.com" target="_blank" rel="noopener">Logdown</a>: Markdown上传图片解决方案</li>
 </ul>
 <p>Logdown提供的编辑器可以加强Markdown的功能，不仅支持图片拖拽上传，还支持LaTex的公式标记（这个功能感觉国内博客鲜有）。可以供简书作为借鉴和参考。</p>
 <ul>
@@ -289,7 +300,7 @@ ga('send', 'pageview');
 <ul>
 <li>邮件无人回复</li>
 </ul>
-<p>大概两三周前，给简书邮箱<a href="mailto:contact@jianshu.io" target="_blank" rel="external">contact@jianshu.io</a>发了封邮件，询问关于简书是否开放API的问题，至今无人回复。我很理解国内工作忙，不查看邮件的行业习惯。但写在联系方式里的联系方式无法联系，还是很令人失望的。</p>
+<p>大概两三周前，给简书邮箱<a href="mailto:contact@jianshu.io" target="_blank" rel="noopener">contact@jianshu.io</a>发了封邮件，询问关于简书是否开放API的问题，至今无人回复。我很理解国内工作忙，不查看邮件的行业习惯。但写在联系方式里的联系方式无法联系，还是很令人失望的。</p>
 <ul>
 <li>写博客时自动保存太频繁</li>
 </ul>
@@ -308,7 +319,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-01-01T00:57:30.491Z" title="2017-1-1 0:57" itemprop="dateUpdated">2017年1月1日 0:57</time>
+    最后更新时间：<time datetime="2018-07-19T20:03:30.052Z" title="2018-7-19 20:03" itemprop="dateUpdated">2018年7月19日 20:03</time>
 </span><br>
 
 
@@ -451,7 +462,7 @@ lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js')
     <div class="bottom">
         <p>
             <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
-            <span>源来承续缘 &copy; 2006 - 2017</span>
+            <span>源来承续缘 &copy; 2006 - 2018</span>
         </p>
     </div>
 </footer>
