@@ -21,8 +21,6 @@ addons:
       - g++-4.8
   ssh_known_hosts:
       - github.com
-      - git.coding.net
-      - 118.193.213.247
 
 script:
   - npm run build
