@@ -8,35 +8,35 @@
     
     <url>
         <loc>https://cn.abnerchou.me/tags/</loc>
-        <lastmod>2018-08-10T05:11:00.460Z</lastmod>
+        <lastmod>2018-08-10T21:40:31.504Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://cn.abnerchou.me/about/</loc>
-        <lastmod>2018-08-10T05:11:00.356Z</lastmod>
+        <lastmod>2018-08-10T21:40:31.412Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://cn.abnerchou.me/categories/</loc>
-        <lastmod>2018-08-10T05:11:00.356Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://cn.abnerchou.me/404.html</loc>
-        <lastmod>2018-08-10T05:11:00.332Z</lastmod>
+        <lastmod>2018-08-10T21:40:31.412Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://cn.abnerchou.me/403.html</loc>
-        <lastmod>2018-08-10T05:11:00.328Z</lastmod>
+        <lastmod>2018-08-10T21:40:31.404Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://cn.abnerchou.me/404.html</loc>
+        <lastmod>2018-08-10T21:40:31.404Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
