@@ -88,7 +88,7 @@ duoshuo_shortname: abnerchou
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: https://github.com/NoahDragon/cn.git
+    repo: git@github.com:NoahDragon/cn.git
     branch: gh-pages
 
 # abbrlink config
