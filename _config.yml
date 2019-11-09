@@ -82,7 +82,7 @@ theme: indigo
 google_analyticsID: UA-48498357-2
 
 # Comments
-duoshuo_shortname: abnerchou
+#duoshuo_shortname: abnerchou
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
