@@ -129,7 +129,7 @@ valine:
   appId: z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI # your leancloud appId
   appKey: nCmNP2LU48qH0Adx8lxPXRSB # your leancloud appKey
   notify: false # Mail notify
-  verify: false # Verify code
+  verify: true # Verify code
   avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   placeholder: Just go go # Comment Box placeholder
   guest_info: nick,mail,link # Comment header info
