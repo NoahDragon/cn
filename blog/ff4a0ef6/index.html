@@ -50,7 +50,7 @@ ga('send', 'pageview');
 <meta property="og:site_name" content="源来承续缘">
 <meta property="og:description" content="这是很小的时候就存在的一个梦想，一直萦绕的心房，无法放下。那就是做一款自己喜爱的电子游戏。看似简单，但对我来说又完全充满挑战。 这个游戏要完全自己设计，从剧情，编程，到美工音乐全都自己完成，并且最后要让自己喜欢。 因为自身专业的关系，编程并不在话下。剧情嘛，就是需要些想象力，也不是很困难。真正让我感觉很困难的是美工和音乐。 美术的话，小时候虽然学过一些，但都是很基本的，用在游戏中很勉强。而且我理想">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-11-09T19:18:10.071Z">
+<meta property="og:updated_time" content="2019-11-09T19:21:24.396Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一个梦想">
 <meta name="twitter:description" content="这是很小的时候就存在的一个梦想，一直萦绕的心房，无法放下。那就是做一款自己喜爱的电子游戏。看似简单，但对我来说又完全充满挑战。 这个游戏要完全自己设计，从剧情，编程，到美工音乐全都自己完成，并且最后要让自己喜欢。 因为自身专业的关系，编程并不在话下。剧情嘛，就是需要些想象力，也不是很困难。真正让我感觉很困难的是美工和音乐。 美术的话，小时候虽然学过一些，但都是很基本的，用在游戏中很勉强。而且我理想">
@@ -226,7 +226,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-11-09T19:18:10.071Z" title="2019-11-9 19:18" itemprop="dateUpdated">2019年11月9日 19:18</time>
+    最后更新时间：<time datetime="2019-11-09T19:21:24.396Z" title="2019-11-9 19:21" itemprop="dateUpdated">2019年11月9日 19:21</time>
 </span><br>
 
 
@@ -330,7 +330,29 @@ ga('send', 'pageview');
 
 
 
+    <!-- Valine Comments -->
     <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
+            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "50"
+        })
+    </script>
+    <!-- Valine Comments end -->
 
 
 
@@ -454,32 +476,6 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 <script async src="///busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-<!-- Valine Comments -->
-
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
-    <script type="text/javascript">
-        var notify = 'false' == true ? true : false;
-        var verify = 'false' == true ? true : false;
-        var GUEST_INFO = ['nick','mail','link'];
-        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-          return GUEST_INFO.indexOf(item) > -1
-        });
-        guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
-        new Valine({
-            el: '.vcomment',
-            notify: notify,
-            verify: verify,
-            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
-            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
-            avatar:"mm",
-            placeholder: "Just go go",
-            guest_info:guest_info,
-            pageSize:"50"
-        })
-    </script>
 
 
 </body>

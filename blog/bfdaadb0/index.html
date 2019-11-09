@@ -52,7 +52,7 @@ ga('send', 'pageview');
 <meta property="og:locale" content="cn">
 <meta property="og:image" content="https://cn.abnerchou.me/img/editorLearningCurve.jpg">
 <meta property="og:image" content="https://cn.abnerchou.me/img/vimAdventureStartupPage.jpg">
-<meta property="og:updated_time" content="2019-11-09T19:18:10.075Z">
+<meta property="og:updated_time" content="2019-11-09T19:21:24.400Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《VIM-Adventures攻略》前言">
 <meta name="twitter:description" content="自从有了计算机，人们就想向其灌输自己的想法。 要想对其输入，自然离不开文本编辑器。 公告：《VIM-Adventures》的作者愿意免费赠送一个此游戏的激活码给在本系列攻略中留言的用户。活动详情请见本文末。 最近一直在学习Emacs，这个几乎和我同龄的软件，在发展如此迅速的时代依然有不少程序员的死忠粉，不禁让人诧异。友人常问：”现在既然都有IDE了，还学那么古老的编辑器干什么？” 刚开始我也这么认">
@@ -255,7 +255,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-11-09T19:18:10.075Z" title="2019-11-9 19:18" itemprop="dateUpdated">2019年11月9日 19:18</time>
+    最后更新时间：<time datetime="2019-11-09T19:21:24.400Z" title="2019-11-9 19:21" itemprop="dateUpdated">2019年11月9日 19:21</time>
 </span><br>
 
 
@@ -359,7 +359,29 @@ ga('send', 'pageview');
 
 
 
+    <!-- Valine Comments -->
     <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
+            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "50"
+        })
+    </script>
+    <!-- Valine Comments end -->
 
 
 
@@ -483,32 +505,6 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 <script async src="///busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-<!-- Valine Comments -->
-
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
-    <script type="text/javascript">
-        var notify = 'false' == true ? true : false;
-        var verify = 'false' == true ? true : false;
-        var GUEST_INFO = ['nick','mail','link'];
-        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-          return GUEST_INFO.indexOf(item) > -1
-        });
-        guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
-        new Valine({
-            el: '.vcomment',
-            notify: notify,
-            verify: verify,
-            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
-            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
-            avatar:"mm",
-            placeholder: "Just go go",
-            guest_info:guest_info,
-            pageSize:"50"
-        })
-    </script>
 
 
 </body>

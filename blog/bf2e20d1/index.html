@@ -50,7 +50,7 @@ ga('send', 'pageview');
 <meta property="og:site_name" content="源来承续缘">
 <meta property="og:description" content="前言《Braid》是一款画风优美的2D卷轴动作解谜游戏。简单来说就是一款平面益智游戏。再简单来说就是休闲小游戏。虽然它小，也就100M左右，但它所描述的世界观却是宏伟深邃。 主人公名叫Tim，穿着一身西装红头发的小伙子。故事的主线还是逃脱不了欧美骑士救公主的套路。Tim也是要去救公主，可Tim文质彬彬，一点也不像是能从恶人手中救出公主的勇士。但Tim不是凡人，他拥有控制时间的能力。 游戏中分为6个">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-11-09T19:18:10.071Z">
+<meta property="og:updated_time" content="2019-11-09T19:21:24.396Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tim Braid">
 <meta name="twitter:description" content="前言《Braid》是一款画风优美的2D卷轴动作解谜游戏。简单来说就是一款平面益智游戏。再简单来说就是休闲小游戏。虽然它小，也就100M左右，但它所描述的世界观却是宏伟深邃。 主人公名叫Tim，穿着一身西装红头发的小伙子。故事的主线还是逃脱不了欧美骑士救公主的套路。Tim也是要去救公主，可Tim文质彬彬，一点也不像是能从恶人手中救出公主的勇士。但Tim不是凡人，他拥有控制时间的能力。 游戏中分为6个">
@@ -308,7 +308,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-11-09T19:18:10.071Z" title="2019-11-9 19:18" itemprop="dateUpdated">2019年11月9日 19:18</time>
+    最后更新时间：<time datetime="2019-11-09T19:21:24.396Z" title="2019-11-9 19:21" itemprop="dateUpdated">2019年11月9日 19:21</time>
 </span><br>
 
 
@@ -412,7 +412,29 @@ ga('send', 'pageview');
 
 
 
+    <!-- Valine Comments -->
     <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
+            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "50"
+        })
+    </script>
+    <!-- Valine Comments end -->
 
 
 
@@ -536,32 +558,6 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 <script async src="///busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-<!-- Valine Comments -->
-
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
-    <script type="text/javascript">
-        var notify = 'false' == true ? true : false;
-        var verify = 'false' == true ? true : false;
-        var GUEST_INFO = ['nick','mail','link'];
-        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-          return GUEST_INFO.indexOf(item) > -1
-        });
-        guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
-        new Valine({
-            el: '.vcomment',
-            notify: notify,
-            verify: verify,
-            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
-            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
-            avatar:"mm",
-            placeholder: "Just go go",
-            guest_info:guest_info,
-            pageSize:"50"
-        })
-    </script>
 
 
 </body>

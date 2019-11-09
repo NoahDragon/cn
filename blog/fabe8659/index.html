@@ -59,7 +59,7 @@ ga('send', 'pageview');
 <meta property="og:image" content="https://cn.abnerchou.me/img/longshort-7.jpg">
 <meta property="og:image" content="https://cn.abnerchou.me/img/longshort-8.jpg">
 <meta property="og:image" content="https://cn.abnerchou.me/img/longshort-9.gif">
-<meta property="og:updated_time" content="2019-11-09T19:18:10.071Z">
+<meta property="og:updated_time" content="2019-11-09T19:21:24.396Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="围棋史上最长与最短对局">
 <meta name="twitter:description" content="【世界最短手数记录】手数：2手对局者：黑方 姜勋8段 白方 金承俊4段（当时）时间：1995年7月24日比赛：韩国第18届国棋战本赛结果：黑认输 据说，姜勋对局前身体不好，原本有弃权的打算。不过按照韩国棋院的规定，比赛弃权者没有对局费，而只要参加比赛无论输赢都有对局费，所以姜勋强打着精神上阵，在对手下第二手后即认输。 想必棋谱贴出来也没有任何意义…… 【日本正式比赛最短手数记录】手数：20手对局">
@@ -256,7 +256,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-11-09T19:18:10.071Z" title="2019-11-9 19:18" itemprop="dateUpdated">2019年11月9日 19:18</time>
+    最后更新时间：<time datetime="2019-11-09T19:21:24.396Z" title="2019-11-9 19:21" itemprop="dateUpdated">2019年11月9日 19:21</time>
 </span><br>
 
 
@@ -360,7 +360,29 @@ ga('send', 'pageview');
 
 
 
+    <!-- Valine Comments -->
     <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
+            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "50"
+        })
+    </script>
+    <!-- Valine Comments end -->
 
 
 
@@ -484,32 +506,6 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 <script async src="///busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-<!-- Valine Comments -->
-
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
-    <script type="text/javascript">
-        var notify = 'false' == true ? true : false;
-        var verify = 'false' == true ? true : false;
-        var GUEST_INFO = ['nick','mail','link'];
-        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-          return GUEST_INFO.indexOf(item) > -1
-        });
-        guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
-        new Valine({
-            el: '.vcomment',
-            notify: notify,
-            verify: verify,
-            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
-            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
-            avatar:"mm",
-            placeholder: "Just go go",
-            guest_info:guest_info,
-            pageSize:"50"
-        })
-    </script>
 
 
 </body>

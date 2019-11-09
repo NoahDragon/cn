@@ -51,7 +51,7 @@ ga('send', 'pageview');
 <meta property="og:description" content="为什么围棋直播不能像电子竞技直播一样，能够实时显示一些状态？ 比如显示估计的双方实地数目，标出棋盘上哪里是棋筋，哪里是大龙。这样对于围棋刚入门只懂规则的棋友能够看得更明白。 同时场面上每一步棋对于估计的目数都产生影响，会有一种扣人心弦的感觉。 这个想法是今天看詹老师和de妹纸的比赛中得出的，因为盘面差距不大，用形式判断看感觉形式紧张又刺激。而如果只看棋盘，我根本不知道谁是优势谁是劣势，那种先手后">
 <meta property="og:locale" content="cn">
 <meta property="og:image" content="https://cn.abnerchou.me/img/dianzi.jpg">
-<meta property="og:updated_time" content="2019-11-09T19:18:10.071Z">
+<meta property="og:updated_time" content="2019-11-09T19:21:24.400Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于围棋直播的一个想法">
 <meta name="twitter:description" content="为什么围棋直播不能像电子竞技直播一样，能够实时显示一些状态？ 比如显示估计的双方实地数目，标出棋盘上哪里是棋筋，哪里是大龙。这样对于围棋刚入门只懂规则的棋友能够看得更明白。 同时场面上每一步棋对于估计的目数都产生影响，会有一种扣人心弦的感觉。 这个想法是今天看詹老师和de妹纸的比赛中得出的，因为盘面差距不大，用形式判断看感觉形式紧张又刺激。而如果只看棋盘，我根本不知道谁是优势谁是劣势，那种先手后">
@@ -225,7 +225,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-11-09T19:18:10.071Z" title="2019-11-9 19:18" itemprop="dateUpdated">2019年11月9日 19:18</time>
+    最后更新时间：<time datetime="2019-11-09T19:21:24.400Z" title="2019-11-9 19:21" itemprop="dateUpdated">2019年11月9日 19:21</time>
 </span><br>
 
 
@@ -329,7 +329,29 @@ ga('send', 'pageview');
 
 
 
+    <!-- Valine Comments -->
     <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
+            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "50"
+        })
+    </script>
+    <!-- Valine Comments end -->
 
 
 
@@ -453,32 +475,6 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 <script async src="///busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-<!-- Valine Comments -->
-
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
-    <script type="text/javascript">
-        var notify = 'false' == true ? true : false;
-        var verify = 'false' == true ? true : false;
-        var GUEST_INFO = ['nick','mail','link'];
-        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-          return GUEST_INFO.indexOf(item) > -1
-        });
-        guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
-        new Valine({
-            el: '.vcomment',
-            notify: notify,
-            verify: verify,
-            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
-            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
-            avatar:"mm",
-            placeholder: "Just go go",
-            guest_info:guest_info,
-            pageSize:"50"
-        })
-    </script>
 
 
 </body>

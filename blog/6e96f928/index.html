@@ -50,7 +50,7 @@ ga('send', 'pageview');
 <meta property="og:site_name" content="源来承续缘">
 <meta property="og:description" content="《T3航站楼》续 早就答应宁要将从北京飞回运城的经过将其汇报下，但最近一直无法静下心来回想。今夜无心睡眠，就在此胡乱感慨几句。 春运期间再次来到T3航展楼，被眼前的人群震惊住了。国内航班的售票口处被人群挤得密密麻麻。感觉今后飞机也会像火车一样一票难求了，而且飞机没站票。 在打包处将行李打包，推着车子就来到了中国国际航空公司国内航线的J口。很潇洒地亮出身份证，却愣在了售票员的一句话上：“你要去哪？”">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-11-09T19:18:10.067Z">
+<meta property="og:updated_time" content="2019-11-09T19:21:24.396Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="回程感言">
 <meta name="twitter:description" content="《T3航站楼》续 早就答应宁要将从北京飞回运城的经过将其汇报下，但最近一直无法静下心来回想。今夜无心睡眠，就在此胡乱感慨几句。 春运期间再次来到T3航展楼，被眼前的人群震惊住了。国内航班的售票口处被人群挤得密密麻麻。感觉今后飞机也会像火车一样一票难求了，而且飞机没站票。 在打包处将行李打包，推着车子就来到了中国国际航空公司国内航线的J口。很潇洒地亮出身份证，却愣在了售票员的一句话上：“你要去哪？”">
@@ -231,7 +231,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-11-09T19:18:10.067Z" title="2019-11-9 19:18" itemprop="dateUpdated">2019年11月9日 19:18</time>
+    最后更新时间：<time datetime="2019-11-09T19:21:24.396Z" title="2019-11-9 19:21" itemprop="dateUpdated">2019年11月9日 19:21</time>
 </span><br>
 
 
@@ -335,7 +335,29 @@ ga('send', 'pageview');
 
 
 
+    <!-- Valine Comments -->
     <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
+            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "50"
+        })
+    </script>
+    <!-- Valine Comments end -->
 
 
 
@@ -459,32 +481,6 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 <script async src="///busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-<!-- Valine Comments -->
-
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
-    <script type="text/javascript">
-        var notify = 'false' == true ? true : false;
-        var verify = 'false' == true ? true : false;
-        var GUEST_INFO = ['nick','mail','link'];
-        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-          return GUEST_INFO.indexOf(item) > -1
-        });
-        guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
-        new Valine({
-            el: '.vcomment',
-            notify: notify,
-            verify: verify,
-            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
-            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
-            avatar:"mm",
-            placeholder: "Just go go",
-            guest_info:guest_info,
-            pageSize:"50"
-        })
-    </script>
 
 
 </body>

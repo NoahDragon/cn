@@ -50,7 +50,7 @@ ga('send', 'pageview');
 <meta property="og:site_name" content="源来承续缘">
 <meta property="og:description" content="静静的，想写些什么，但又感觉空空的没什么可以写的。 早晨，没有阳光，朦胧听到布谷鸟的叫声。拉开窗帘，惊飞窗边的鸽子。又是一个阴天。 从小喜欢阴天。似乎阴天就和钻在被子中一样，有一种特殊的心灵安慰。 可上了大学，我就从来没有很好的观察过天气了。感觉在大学里自己昏昏沉沉，毫无自我。处事也无章法，无逻辑。是不是自己有些恋家。 今天是还呆在家的同学在这的最后一次聚会。上了大学，大家都变化很大。成熟，自信。">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-11-09T19:18:10.067Z">
+<meta property="og:updated_time" content="2019-11-09T19:21:24.392Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="晨思">
 <meta name="twitter:description" content="静静的，想写些什么，但又感觉空空的没什么可以写的。 早晨，没有阳光，朦胧听到布谷鸟的叫声。拉开窗帘，惊飞窗边的鸽子。又是一个阴天。 从小喜欢阴天。似乎阴天就和钻在被子中一样，有一种特殊的心灵安慰。 可上了大学，我就从来没有很好的观察过天气了。感觉在大学里自己昏昏沉沉，毫无自我。处事也无章法，无逻辑。是不是自己有些恋家。 今天是还呆在家的同学在这的最后一次聚会。上了大学，大家都变化很大。成熟，自信。">
@@ -225,7 +225,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-11-09T19:18:10.067Z" title="2019-11-9 19:18" itemprop="dateUpdated">2019年11月9日 19:18</time>
+    最后更新时间：<time datetime="2019-11-09T19:21:24.392Z" title="2019-11-9 19:21" itemprop="dateUpdated">2019年11月9日 19:21</time>
 </span><br>
 
 
@@ -329,7 +329,29 @@ ga('send', 'pageview');
 
 
 
+    <!-- Valine Comments -->
     <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
+            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "50"
+        })
+    </script>
+    <!-- Valine Comments end -->
 
 
 
@@ -453,32 +475,6 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 <script async src="///busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-<!-- Valine Comments -->
-
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
-    <script type="text/javascript">
-        var notify = 'false' == true ? true : false;
-        var verify = 'false' == true ? true : false;
-        var GUEST_INFO = ['nick','mail','link'];
-        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-          return GUEST_INFO.indexOf(item) > -1
-        });
-        guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
-        new Valine({
-            el: '.vcomment',
-            notify: notify,
-            verify: verify,
-            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
-            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
-            avatar:"mm",
-            placeholder: "Just go go",
-            guest_info:guest_info,
-            pageSize:"50"
-        })
-    </script>
 
 
 </body>

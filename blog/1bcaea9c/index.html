@@ -51,7 +51,7 @@ ga('send', 'pageview');
 <meta property="og:description" content="最近荒废了一个双休日，将《双星物语2》打通。总体感觉是一款不错的游戏。 前几天无意看到土豆六道做的《双星物语2》功略视频，立即被游戏的画风所吸引。感觉跟《仙剑奇侠传3》的风格很像，都是3D卡通人物。 但双星物语的主线剧情有些单调，就是夺城堡，修飞机，救妹妹。然而支线剧情却非常的丰富，有时候甚至不想去完成主线，而沉浸在完成支线任务的乐趣当中。比如：提升宝物猎人的等级，收集各种齿轮，与不同的人物对话。">
 <meta property="og:locale" content="cn">
 <meta property="og:image" content="https://cn.abnerchou.me/img/doubleStarStory_Cloud.jpeg">
-<meta property="og:updated_time" content="2019-11-09T19:18:10.071Z">
+<meta property="og:updated_time" content="2019-11-09T19:21:24.396Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《双星物语2》，看不出剧情和标题有什么关系">
 <meta name="twitter:description" content="最近荒废了一个双休日，将《双星物语2》打通。总体感觉是一款不错的游戏。 前几天无意看到土豆六道做的《双星物语2》功略视频，立即被游戏的画风所吸引。感觉跟《仙剑奇侠传3》的风格很像，都是3D卡通人物。 但双星物语的主线剧情有些单调，就是夺城堡，修飞机，救妹妹。然而支线剧情却非常的丰富，有时候甚至不想去完成主线，而沉浸在完成支线任务的乐趣当中。比如：提升宝物猎人的等级，收集各种齿轮，与不同的人物对话。">
@@ -232,7 +232,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-11-09T19:18:10.071Z" title="2019-11-9 19:18" itemprop="dateUpdated">2019年11月9日 19:18</time>
+    最后更新时间：<time datetime="2019-11-09T19:21:24.396Z" title="2019-11-9 19:21" itemprop="dateUpdated">2019年11月9日 19:21</time>
 </span><br>
 
 
@@ -336,7 +336,29 @@ ga('send', 'pageview');
 
 
 
+    <!-- Valine Comments -->
     <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
+            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "50"
+        })
+    </script>
+    <!-- Valine Comments end -->
 
 
 
@@ -460,32 +482,6 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 <script async src="///busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-<!-- Valine Comments -->
-
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
-    <script type="text/javascript">
-        var notify = 'false' == true ? true : false;
-        var verify = 'false' == true ? true : false;
-        var GUEST_INFO = ['nick','mail','link'];
-        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-          return GUEST_INFO.indexOf(item) > -1
-        });
-        guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
-        new Valine({
-            el: '.vcomment',
-            notify: notify,
-            verify: verify,
-            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
-            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
-            avatar:"mm",
-            placeholder: "Just go go",
-            guest_info:guest_info,
-            pageSize:"50"
-        })
-    </script>
 
 
 </body>
