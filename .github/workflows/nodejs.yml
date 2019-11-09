@@ -24,12 +24,8 @@ jobs:
       run: |
         npm install
         npm run build
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
     - name: deploy
-      run: |
-        git config --global user.name "Abner Chou"
-        git config --global user.email hi@abnerchou.me
-        npm run deploy
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
+      with:
+          repo-token: ${{ secrets.GH_TOKEN }}
+          site-directory: "public"
