@@ -59,7 +59,7 @@ ga('send', 'pageview');
 <meta property="og:image" content="https://cn.abnerchou.me/img/computer-go-7.jpg">
 <meta property="og:image" content="https://cn.abnerchou.me/img/computer-go-8.jpg">
 <meta property="og:image" content="https://cn.abnerchou.me/img/computer-go-9.jpg">
-<meta property="og:updated_time" content="2019-11-09T17:50:08.907Z">
+<meta property="og:updated_time" content="2019-11-09T19:12:23.990Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何搭建围棋算法间对战平台">
 <meta name="twitter:description" content="吧友@yc10k 提到如何实现围棋算法间的对弈和比较呢？ 我以前使用的是笨办法，就是将两个软件打开，一个电脑执黑人执白，一个电脑执白人执黑，然后跟局两个软件的走步，来回在摆子即可。 现在介绍一种能够让电脑间自动实验对弈的方法。 首先算法必须支持GTP，即Go Text Protocol， 是一种用文本方式与计算机围棋算法交流的协议。是GMP（Go Modem Protocol）协议的改进版。 由">
@@ -271,7 +271,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-11-09T17:50:08.907Z" title="2019-11-9 17:50" itemprop="dateUpdated">2019年11月9日 17:50</time>
+    最后更新时间：<time datetime="2019-11-09T19:12:23.990Z" title="2019-11-9 19:12" itemprop="dateUpdated">2019年11月9日 19:12</time>
 </span><br>
 
 
@@ -378,6 +378,11 @@ lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js')
 
 
 
+
+
+
+
+    <div class="comments vcomment" id="comments"></div>
 
 
 
@@ -504,6 +509,32 @@ lazyScripts.push('/js/embed.min.js?v=1.4.0');
 
 
 <script async src="///busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<!-- Valine Comments -->
+
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <script type="text/javascript">
+        var notify = 'false' == true ? true : false;
+        var verify = 'false' == true ? true : false;
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+        new Valine({
+            el: '.vcomment',
+            notify: notify,
+            verify: verify,
+            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
+            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
+            avatar:"mm",
+            placeholder: "Just go go",
+            guest_info:guest_info,
+            pageSize:"50"
+        })
+    </script>
 
 
 </body>

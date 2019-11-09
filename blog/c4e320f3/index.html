@@ -51,7 +51,7 @@ ga('send', 'pageview');
 <meta property="og:description" content="Suggestion on Jianshu website.">
 <meta property="og:locale" content="cn">
 <meta property="og:image" content="http://i1.sinaimg.cn/dy/c/sd/2011-02-28/U2494P1T1D22028511F21DT20110228172620.jpg">
-<meta property="og:updated_time" content="2019-11-09T17:50:08.911Z">
+<meta property="og:updated_time" content="2019-11-09T19:12:23.990Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="给简书的一点建议">
 <meta name="twitter:description" content="Suggestion on Jianshu website.">
@@ -319,7 +319,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-11-09T17:50:08.911Z" title="2019-11-9 17:50" itemprop="dateUpdated">2019年11月9日 17:50</time>
+    最后更新时间：<time datetime="2019-11-09T19:12:23.990Z" title="2019-11-9 19:12" itemprop="dateUpdated">2019年11月9日 19:12</time>
 </span><br>
 
 
@@ -431,6 +431,11 @@ lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js')
 
 
 
+
+
+
+
+    <div class="comments vcomment" id="comments"></div>
 
 
 
@@ -562,6 +567,32 @@ lazyScripts.push('/js/embed.min.js?v=1.4.0');
 
 
 <script async src="///busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<!-- Valine Comments -->
+
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <script type="text/javascript">
+        var notify = 'false' == true ? true : false;
+        var verify = 'false' == true ? true : false;
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+        new Valine({
+            el: '.vcomment',
+            notify: notify,
+            verify: verify,
+            appId: "z49YHPnXeJAel8QXOKISRjgF-MdYXbMMI",
+            appKey: "nCmNP2LU48qH0Adx8lxPXRSB",
+            avatar:"mm",
+            placeholder: "Just go go",
+            guest_info:guest_info,
+            pageSize:"50"
+        })
+    </script>
 
 
 </body>
